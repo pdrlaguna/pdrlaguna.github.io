@@ -1,0 +1,697 @@
+/*!
+ * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* ==========================================================================
+.GLOBAL
+========================================================================== */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Open Sans,'Helvetica Neue',Arial,sans-serif;
+}
+
+hr {
+    max-width: 50px;
+    border-color: #000000;
+    border-width: 3px;
+}
+
+hr.light {
+    border-color: #fff;
+}
+
+a {
+    color: #000000;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover,
+a:focus {
+    color: #ffffff;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+h2,
+{
+    font-family: 'Gentium Basic', serif;
+}
+
+p {
+    font-family: 'Gentium Basic', serif;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-size: 26px;
+    margin-top: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.bg-dark {
+    background-color: #060211;
+    color: #ffffff;
+}
+
+.bg-primary {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+section {
+    padding: 100px 0;
+}
+
+aside {
+    padding: 50px 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.text-primary {
+    color: #f05f40;
+}
+
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+
+/* ==========================================================================
+.HEADER
+========================================================================== */
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: left;
+    color: #fff;
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: right;
+}
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 30px;
+}
+
+header .header-content .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -0.075em;
+}
+
+header .header-content .header-content-inner p {
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media(min-width:1024px) {
+    p {
+        font-size: 25px;
+    }
+
+    header {
+        min-height: 100%;
+    }
+
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: left;
+    }
+
+    header .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+        margin-left: 50%;
+    }
+
+    header .header-content .header-content-inner p {
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 30px;
+    }
+}
+
+/* ==========================================================================
+.ABOUT
+========================================================================== */
+#about {
+    margin-bottom:35px;    
+}
+
+/* ==========================================================================
+.PORTFOLIO
+========================================================================== */
+
+#portfolio {
+
+}
+
+/* ==========================================================================
+.PORTFOLIO - DESCRIPTION
+========================================================================== */
+
+#portfolio .description{
+    margin: 10px;
+}
+
+#portfolio .description ul.tags{
+    padding-left: 0px;
+}
+
+#portfolio .description ul.tags li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    font-family: 'Gentium Basic', serif;
+    font-style: italic;
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+}
+
+#portfolio .client{
+    margin-top: 1em;
+}
+
+#portfolio .client h2{
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 0;
+    font-weight: 700;
+    letter-spacing: -0.07em;
+}
+
+#portfolio .title{
+
+}
+
+#portfolio .title h3{
+    margin-top:0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    letter-spacing: -0.07em;
+}
+
+#portfolio .title h3 b{
+    font-weight: 700;
+
+}
+
+#portfolio .text{
+}
+
+#portfolio .text p{
+    margin-top:0px;
+    color: rgba(255,255,255,0.95);
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+#portfolio .cta{
+}
+
+
+
+@media(min-width:1200px) {
+    #portfolio .description{
+        margin: 25px;
+    }
+
+    #portfolio .description ul.tags li{
+        margin-right: 25px;
+        font-size: 16px;
+    }
+
+    #portfolio .client{
+        margin-top: 2em;
+    }
+
+    #portfolio .client h2{
+        font-size: 26px;
+        margin-top: 0;
+    }
+
+    #portfolio .title{
+
+    }
+
+    #portfolio .title h3{
+        margin-top:-10px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 3.1em;
+        letter-spacing: -0.07em;
+    }
+
+    #portfolio .text{
+    }
+
+    #portfolio .text p{
+        margin-top:20px;
+        font-size: 18px;
+        line-height: 1.2em;
+    }
+
+    #portfolio .cta{
+    }
+}
+
+
+/* ==========================================================================
+.PORTFOLIO - PIECES
+========================================================================== */
+
+#portfolio .pieces-showcase {
+}
+
+
+#portfolio .responsive-pieces-img {
+}
+
+#portfolio .responsive-pieces-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ==========================================================================
+.PORTFOLIO - CASES
+========================================================================== */
+
+#portfolio #rio2016{
+    border-style: solid;
+    border-width: 12px;
+    border-color: #ff5200;
+        background: url("../img/rio2016_bg-s.jpg") no-repeat center center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-color: #501d1a;
+    margin-bottom: 15px;
+}
+
+#portfolio #bradesco{
+    border-style: solid;
+    border-width: 12px;
+    border-color: #ff0000;
+        background: url("../img/bradesco_bg-s.jpg") no-repeat center center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 15px;
+}
+
+#portfolio #michelin{
+    border-style: solid;
+    border-width: 12px;
+    border-color: #ffcc00;
+        background: url("../img/michelin_bg-s.jpg") no-repeat center center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+@media(min-width:1024px) {
+    
+    #portfolio #rio2016{
+        background: url("../img/rio2016_bg.jpg") no-repeat center center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    background-color: #501d1a;
+    margin-bottom: 35px;
+    }
+
+    #portfolio #bradesco{
+        background: url("../img/bradesco_bg.jpg") no-repeat center center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    margin-bottom: 35px;
+    }
+
+    #portfolio #michelin{
+        background: url("../img/michelin_bg.jpg") no-repeat center center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    margin-bottom: 35px;
+    }
+}
+
+/* ==========================================================================
+.PORTFOLIO - CLIENTS
+========================================================================== */
+
+#portfolio #more-projects p{margin-top: 35px;}
+
+#portfolio #clients {margin-bottom: 70px;}
+
+#portfolio #clients div {min-height: 150px;}
+
+#portfolio #clients #toyota      {background: url("../img/logos/toyota.png") no-repeat center center;}
+#portfolio #clients #arno        {background: url("../img/logos/arno.png") no-repeat center center;}
+#portfolio #clients #natura      {background: url("../img/logos/natura.png") no-repeat center center;}
+#portfolio #clients #nestle      {background: url("../img/logos/nestle.png") no-repeat center center;}
+#portfolio #clients #vale        {background: url("../img/logos/vale.png") no-repeat center center;}
+#portfolio #clients #habibs      {background: url("../img/logos/habibs.png") no-repeat center center;}
+#portfolio #clients #sadia       {background: url("../img/logos/sadia.png") no-repeat center center;}
+#portfolio #clients #cocacola    {background: url("../img/logos/cocacola.png") no-repeat center center;}
+#portfolio #clients #cvc         {background: url("../img/logos/cvc.png") no-repeat center center;}
+#portfolio #clients #pg          {background: url("../img/logos/pg.png") no-repeat center center;}
+#portfolio #clients #perdigao    {background: url("../img/logos/perdigao.png") no-repeat center center;}
+#portfolio #clients #webmotors   {background: url("../img/logos/webmotors.png") no-repeat center center;}
+
+
+/* ==========================================================================
+.CONTATO
+========================================================================== */
+
+#contact {
+
+}
+
+#contact h4 {
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 55px;
+
+}
+
+#contact p{
+    margin-top: 10px;
+
+}
+
+@media(min-width:380px) {
+    #contact h4 {
+    font-size: 35px;
+    }
+}
+@media(min-width:768px) {
+    #contact h4 {
+    font-size: 69px;
+    }
+}
+/* ==========================================================================
+.BOTÕES
+========================================================================== */
+
+.call-to-action h2 {
+    margin: 0 auto 20px;
+}
+
+.btn-default {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ff5200;
+    background-color: rgba(124, 18, 102, 0.5);
+    color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    border-color: #ff8124;
+    color: #fff;
+    background-color: #921c60;
+}
+
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    background-image: none;
+}
+
+/* ==========================================================================
+.BOTÕES - CUSTOM
+========================================================================== */
+
+/* ======= RIO ======= */
+.btn-rio2016 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ff5200;
+    background-color: rgba(124, 18, 102, 0.5);
+    color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn-rio2016:hover,
+.btn-rio2016:focus,
+.btn-rio2016.focus,
+.btn-rio2016:active,
+.btn-rio2016.active,
+.open > .dropdown-toggle.btn-rio2016 {
+    border-color: #ff8124;
+    color: #fff;
+    background-color: #921c60;
+}
+
+.btn-rio2016:active,
+.btn-rio2016.active,
+.open > .dropdown-toggle.btn-rio2016 {
+    background-image: none;
+}
+
+/* ======= BRADESCO ======= */
+.btn-bradesco {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ff0000;
+    background-color: rgba(0, 7, 52, 0.5);
+    color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn-bradesco:hover,
+.btn-bradesco:focus,
+.btn-bradesco.focus,
+.btn-bradesco:active,
+.btn-bradesco.active,
+.open > .dropdown-toggle.btn-bradesco {
+    border-color: #ff0000;
+    color: #fff;
+    background-color: #101c42;
+}
+
+.btn-bradesco:active,
+.btn-bradesco.active,
+.open > .dropdown-toggle.btn-bradesco {
+    background-image: none;
+}
+
+/* ======= MICHELIN ======= */
+.btn-michelin {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ffcc00;
+    background-color: rgba(0, 7, 52, 0.5);
+    color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn-michelin:hover,
+.btn-michelin:focus,
+.btn-michelin.focus,
+.btn-michelin:active,
+.btn-michelin.active,
+.open > .dropdown-toggle.btn-michelin {
+    border-color: #ffd93f;
+    color: #fff;
+    background-color: #051369;
+}
+
+.btn-michelin:active,
+.btn-michelin.active,
+.open > .dropdown-toggle.btn-michelin {
+    background-image: none;
+}
+
+/* ==========================================================================
+.BOTOES - DEFAULT
+========================================================================== */
+
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.btn-default .badge {
+    color: #fff;
+    background-color: #222;
+}
+
+.btn-primary {
+    border-color: #f05f40;
+    color: #fff;
+    background-color: #f05f40;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    border-color: #ed431f;
+    color: #fff;
+    background-color: #ee4b28;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: #f05f40;
+    background-color: #f05f40;
+}
+
+.btn-primary .badge {
+    color: #f05f40;
+    background-color: #fff;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    color: #fff;
+    background: #222;
+}
+
+::selection {
+    text-shadow: none;
+    color: #ebd9ff;
+    background: #371260;
+}
+
+img::selection {
+    color: #fff;
+    background: 0 0;
+}
+
+img::-moz-selection {
+    color: #fff;
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: #222;
+}
