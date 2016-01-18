@@ -121,6 +121,17 @@ header {
     text-align: right;
 }
 
+header #emptypage {
+    background-image: url(../img/headerempty.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: right;
+
+}
+
 header .header-content {
     position: relative;
     width: 100%;
@@ -172,6 +183,14 @@ header .header-content .header-content-inner p {
         font-size: 30px;
     }
 }
+
+/* ==========================================================================
+.HEADER 404
+========================================================================== */
+
+
+
+
 
 /* ==========================================================================
 .ABOUT

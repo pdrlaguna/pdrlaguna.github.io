@@ -1,0 +1,207 @@
+/*!
+ * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* ==========================================================================
+.GLOBAL
+========================================================================== */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Open Sans,'Helvetica Neue',Arial,sans-serif;
+}
+
+hr {
+    max-width: 50px;
+    border-color: #000000;
+    border-width: 3px;
+}
+
+hr.light {
+    border-color: #fff;
+}
+
+a {
+    color: #ffffff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover,
+a:focus {
+    color: #ffffff;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+h2,
+{
+    font-family: 'Gentium Basic', serif;
+}
+
+p {
+    font-family: 'Gentium Basic', serif;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-size: 26px;
+    margin-top: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.bg-dark {
+    background-color: #060211;
+    color: #ffffff;
+}
+
+.bg-primary {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+section {
+    padding: 100px 0;
+}
+
+aside {
+    padding: 50px 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.text-primary {
+    color: #f05f40;
+}
+
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+
+/* ==========================================================================
+.HEADER
+========================================================================== */
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: left;
+    color: #fff;
+    background-color: #000000;
+    background-image: url(../img/headerempty.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: right;min-height: 100%;
+}
+
+header .header-content {
+    position: relative;
+    width: 100%;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+}
+
+    header .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;;
+    }
+
+header .header-content .header-content-inner h5 {
+    margin-top: 0;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11em;
+}
+
+header .header-content .header-content-inner p {
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 400;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 16px;
+}
+
+header .header-content .header-content-inner h4 {
+    color: #ffffff;
+    margin-top: -30px;
+    margin-bottom: -10px;
+    font-size: 3em;
+}
+
+
+
+@media(min-width:1024px) {
+    header .header-content .header-content-inner p {
+        font-size: 35px;
+    }
+
+
+    header .header-content .header-content-inner h5 {
+        font-size: 15em;
+    }
+
+    header .header-content .header-content-inner h4 {
+        font-size: 7em;
+    }
+}
+
+
+::-moz-selection {
+    text-shadow: none;
+    color: #fff;
+    background: #222;
+}
+
+::selection {
+    text-shadow: none;
+    color: #ebd9ff;
+    background: #371260;
+}
+
+img::selection {
+    color: #fff;
+    background: 0 0;
+}
+
+img::-moz-selection {
+    color: #fff;
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: #222;
+}
