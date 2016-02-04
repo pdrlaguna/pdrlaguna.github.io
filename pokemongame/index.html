@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <textarea id="output-textbox" rows="20" cols="50">Esse é só um teste de lógica e gameplay. No momento o jogo não tem endgame e o texto aparece todo ao mesmo tempo, o que acaba deixando tudo meio mecânico, mas serve como teste. &#13;Digite start para começar.&#13;</textarea>
+    <textarea id="output-textbox" rows="30" cols="150">Esse é só um teste de lógica e gameplay. No momento o jogo não tem final e o texto aparece todo ao mesmo tempo, o que acaba deixando tudo meio mecânico, mas serve como teste. &#13; &#13;Digite start para começar.&#13;&#13;</textarea>
     <form onSubmit="sendInput(); return false;">
         <input id="input-textbox" type="text" />
         <input type="submit" />
@@ -32,25 +32,41 @@ function sendInput() {
     var output = process(input);
     textOut.value += output + "\n";
 }
+var pikachuHp = 10;
+var charmanderHp = 10;
+
 
 function process(input) {
 
+    if (input === "pika") {
+        pikachuHp = pikachuHp;
+        return pikachuHp  
+    }
+
+    if (input === "char") {
+        charmanderHp = charmanderHp;
+        return charmanderHp  
+    } 
+
     if (input === "start") { 
         return  "Você estava no Code Academy aprendendo a programar em Javascript e do nada um wild charmander apareceu!"
+                +"\n"   
                 +"\n"
-                +"Você vai batalhar ou fugir?";  
+                +"Você vai batalhar ou fugir?"   
+                +"\n";
     } 
 
     if (input === "batalhar") {
         return   "Ao ver o pobre Charmander indefeso você não perdoa e vai cagá-lo a pau imediatamente!"
                 +"\n" 
                 +"A batalha começou! Você só tem um Pikachu, então vai ter que ser esse mesmo!" 
-                +"\n" 
+                +"\n"   
                 +"Seu Pikachu tem 10 de HP." 
                 +"\n" 
                 +"Como você pegou o Charmander de surpresa indefeso na floresta, você ataca primeiro." 
-                +"\n" 
-                +"Golpes do Pikachu: thundershock"
+                +"\n"+"\n" 
+                +"Golpes do Pikachu: thundershock" 
+                +"\n"; 
     } 
 
     if (input === "fugir") {
@@ -60,37 +76,81 @@ function process(input) {
                 +"\n" 
                 +"Seu Pikachu tem 10 de HP." 
                 +"\n" 
-                +"Como você ficou mosqueando distraído na floresta, o Charmander selvagem começou atacando." 
-                +"\n" 
-                +"Charmander usa Ember e é super efetivo!" 
-                +"\n"
-                +"Pikachu perde 4 de HP." 
+                +"Como você ficou mosqueando distraído na floresta, o Charmander selvagem começou atacando."
+                +"\n"+"\n" 
+                +ember() 
                 +"\n" 
                 +"Agora é sua vez. Vê se acorda pra vida e faz alguma coisa!" 
-                +"\n" 
-                +"Golpes do Pikachu: thundershock"
+                +"\n"+"\n" 
+                +"Golpes do Pikachu: thundershock" 
+                +"\n"; 
     } 
 
     if (input === "thundershock") {
-        return   "Pikachu usa Thundershock e é bem efetivo."
+        return  thundershock() 
                 +"\n" 
-                +"Charmander perde 2 de HP." 
-                +"\n" 
-                +"Charmander usa Ember e é super efetivo!" 
-                +"\n" 
-                +"Pikachu perde 4 de HP." 
-                +"\n" 
-                +"Ainda não programamos o que acontece quando um Pokémon morre."
-                +"\n" 
-                +"Desculpa. O jogo termina aqui, por enquanto."
-                +"\n" 
-                +"Obrigado por jogar!"
+                +ember()  
+                +"\n"+"\n" 
+                +"Golpes do Pikachu: thundershock" 
+                +"\n"; 
     }
 }
 
+function thundershock() {
+    var diceRoll = Math.random();
+    var damage = 0;
+    var efetividade = "";
 
+    if (diceRoll < 0.20) {
+        efetividade = "é super efetivo!";
+        var damage = 4;
+    } else if (diceRoll <= 0.60) {
+        efetividade = "é bem efetivo.";
+        var damage = 2;
+    } else if (diceRoll <= 0.95) {
+        efetividade = "pegou de raspão.";
+        var damage = 1;
+    } else {
+        efetividade = "errou.";
+        var damage = 0;
+    }
 
-console.log(variavel);
+    charmanderHp = charmanderHp - damage;
+
+    return "Pikachu usa Thundershock e " + efetividade 
+           +"\n"
+           +"Charmander perde " + damage + " de HP."  
+           +"\n" 
+           +"Charmander tem " + charmanderHp + " de HP."
+}
+
+function ember() {
+    var diceRoll = Math.random();
+    var damage = 0;
+    var efetividade = "";
+
+    if (diceRoll < 0.20) {
+        efetividade = "é super efetivo!";
+        var damage = 4;
+    } else if (diceRoll <= 0.60) {
+        efetividade = "é bem efetivo.";
+        var damage = 2;
+    } else if (diceRoll <= 0.95) {
+        efetividade = "pegou de raspão.";
+        var damage = 1;
+    } else {
+        efetividade = "errou.";
+        var damage = 0;
+    }
+
+    pikachuHp = pikachuHp - damage;
+
+    return "Charmander usa Ember e " + efetividade 
+           +"\n"
+           +"Pikachu perde " + damage + " de HP."  
+           +"\n" 
+           +"Pikachu tem " + pikachuHp + " de HP."
+}
 
 </script>
 </body>
