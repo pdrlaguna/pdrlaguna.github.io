@@ -1,14 +1,25 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>pokemon game</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pokémon Game</title>
+
 </head>
 
 <body>
-	<textarea id="output-textbox" rows="20" cols="50"></textarea>
-	<form onSubmit="sendInput(); return false;">
-		<input id="input-textbox" type="text" />
-		<input type="submit" />
-	</form>
+    <textarea id="output-textbox" rows="20" cols="50">Esse é só um teste de lógica e gameplay. No momento o jogo não tem endgame e o texto aparece todo ao mesmo tempo, o que acaba deixando tudo meio mecânico, mas serve como teste. &#13;Digite start para começar.&#13;</textarea>
+    <form onSubmit="sendInput(); return false;">
+        <input id="input-textbox" type="text" />
+        <input type="submit" />
+    </form>
 
 <script>
 
@@ -22,24 +33,62 @@ function sendInput() {
     textOut.value += output + "\n";
 }
 
-function gameState () {
-
-}
-
 function process(input) {
 
     if (input === "start") { 
-    	return "- Let's battle!"+"\n"+"Oh! You're so eager to start!"+ "\n" + "The game is not ready!"; 
+        return  "Você estava no Code Academy aprendendo a programar em Javascript e do nada um wild charmander apareceu!"
+                +"\n"
+                +"Você vai batalhar ou fugir?";  
     } 
 
-    if (input === "test") {
-    	return testFunction(100);
+    if (input === "batalhar") {
+        return   "Ao ver o pobre Charmander indefeso você não perdoa e vai cagá-lo a pau imediatamente!"
+                +"\n" 
+                +"A batalha começou! Você só tem um Pikachu, então vai ter que ser esse mesmo!" 
+                +"\n" 
+                +"Seu Pikachu tem 10 de HP." 
+                +"\n" 
+                +"Como você pegou o Charmander de surpresa indefeso na floresta, você ataca primeiro." 
+                +"\n" 
+                +"Golpes do Pikachu: thundershock"
+    } 
+
+    if (input === "fugir") {
+        return   "Você tenta fugir, mas o Charmander te pega mesmo assim e te chama pra briga!"
+                +"\n" 
+                +"A batalha começou! Você só tem um Pikachu, então vai ter que ser esse mesmo!" 
+                +"\n" 
+                +"Seu Pikachu tem 10 de HP." 
+                +"\n" 
+                +"Como você ficou mosqueando distraído na floresta, o Charmander selvagem começou atacando." 
+                +"\n" 
+                +"Charmander usa Ember e é super efetivo!" 
+                +"\n"
+                +"Pikachu perde 4 de HP." 
+                +"\n" 
+                +"Agora é sua vez. Vê se acorda pra vida e faz alguma coisa!" 
+                +"\n" 
+                +"Golpes do Pikachu: thundershock"
+    } 
+
+    if (input === "thundershock") {
+        return   "Pikachu usa Thundershock e é bem efetivo."
+                +"\n" 
+                +"Charmander perde 2 de HP." 
+                +"\n" 
+                +"Charmander usa Ember e é super efetivo!" 
+                +"\n" 
+                +"Pikachu perde 4 de HP." 
+                +"\n" 
+                +"Ainda não programamos o que acontece quando um Pokémon morre."
+                +"\n" 
+                +"Desculpa. O jogo termina aqui, por enquanto."
+                +"\n" 
+                +"Obrigado por jogar!"
     }
 }
 
-function testFunction(num){
-	return "Seu teste de input deu certo." 
-}
+
 
 console.log(variavel);
 
