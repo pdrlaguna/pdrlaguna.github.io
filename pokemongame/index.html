@@ -1,36 +1,62 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pokémon Game</title>
+		<meta name="description" content="..." />
+		<meta name="keywords" content="..." />
+		<meta name="author" content="pdrlaguna" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/set1.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<header class="codrops-header">
+				<h1>Pokémon Clone <span>Um simples jogo de batalhas no browser.</span></h1>
+				<nav class="codrops-demos">
+				</nav>
+			</header>
+			<section class="content">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Pokémon Game</title>
-
-</head>
-
-<body>
-    <textarea id="output-textbox" rows="30" cols="150">Esse é só um teste de lógica e gameplay. No momento o jogo não tem final e o texto aparece todo ao mesmo tempo, o que acaba deixando tudo meio mecânico, mas serve como teste. &#13; &#13;Digite start para começar.&#13;&#13;</textarea>
-    <form onSubmit="sendInput(); return false;">
-        <input id="input-textbox" type="text" />
-        <input type="submit" />
-    </form>
-
+					<textarea id="output-textbox" rows="15" cols="50">Esse é só um teste de lógica e gameplay. No momento o jogo não tem final e o texto aparece todo ao mesmo tempo, o que acaba deixando tudo meio mecânico, mas serve como teste. &#13; &#13;Digite start para começar.&#13;&#13;</textarea>
+				<span class="input input--minoru">
+					<form onSubmit="sendInput(); return false;">
+						<input class="input__field input__field--minoru" type="text" id="input-textbox" placeholder="digite aqui..." />
+					    
+					</label>
+					</form>
+				</span>
+			</section>
+			<!-- Related demos -->
+			<section class="content content--related">
+				<p>Voltar para o meu portifólio:</p>
+				<a class="media-item" href="www.pdrlaguna.com">
+					<h3 class="media-item__title">pdrlaguna.com</h3>
+				</a>
+			</section>
+		</div><!-- /container -->
 <script>
 
 var textIn  = document.getElementById("input-textbox");
 var textOut = document.getElementById("output-textbox");
+
+
 
 function sendInput() {
     var input = textIn.value;
     textIn.value = "";
     var output = process(input);
     textOut.value += output + "\n";
+    document.getElementById("output-textbox").scrollTop = document.getElementById("output-textbox").scrollHeight 
+
 }
 var pikachuHp = 10;
 var charmanderHp = 10;
@@ -88,7 +114,7 @@ function process(input) {
 
     if (input === "thundershock") {
         return  thundershock() 
-                +"\n" 
+                +"\n"+"\n"  
                 +ember()  
                 +"\n"+"\n" 
                 +"Golpes do Pikachu: thundershock" 
@@ -153,5 +179,5 @@ function ember() {
 }
 
 </script>
-</body>
+	</body>
 </html>
