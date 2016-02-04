@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>pokemon game</title>
+</head>
+
+<body>
+	<textarea id="output-textbox" rows="20" cols="50"></textarea>
+	<form onSubmit="sendInput(); return false;">
+		<input id="input-textbox" type="text" />
+		<input type="submit" />
+	</form>
+
+<script>
+
+var textIn  = document.getElementById("input-textbox");
+var textOut = document.getElementById("output-textbox");
+
+function sendInput() {
+    var input = textIn.value;
+    textIn.value = "";
+    var output = process(input);
+    textOut.value += output + "\n";
+}
+
+function gameState () {
+
+}
+
+function process(input) {
+
+    if (input === "start") { 
+    	return "- Let's battle!"+"\n"+"Oh! You're so eager to start!"+ "\n" + "The game is not ready!"; 
+    } 
+
+    if (input === "test") {
+    	return testFunction(100);
+    }
+}
+
+function testFunction(num){
+	return "Seu teste de input deu certo." 
+}
+
+console.log(variavel);
+
+</script>
+</body>
+</html>
