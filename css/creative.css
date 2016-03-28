@@ -37,8 +37,10 @@ a {
 
 a:hover,
 a:focus {
-    color: #ffffff;
+    color: #717171;
 }
+
+
 
 h1,
 h2,
@@ -72,6 +74,18 @@ p {
 .bg-dark {
     background-color: #060211;
     color: #ffffff;
+}
+
+.bg-dark a{
+    color: #ffffff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.bg-dark a:hover,
+.bg-dark a:focus {
+    color: #eeeeee;
 }
 
 .bg-primary {
