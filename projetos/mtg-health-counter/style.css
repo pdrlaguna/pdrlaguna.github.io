@@ -4,15 +4,14 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Open Sans', sans-serif;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently
-                                  not supported by any browser */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
+/* CORPO DO APP */
 .wrapper{
   width: 320px;
   height: 480px;
@@ -20,16 +19,25 @@ body {
   margin: 0 auto;
 }
 
+/* DIVISOR E FOOTER */
+
 .reset {
   position: relative;
   width: 100%;
   height: 10%;
   cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
 }
 
 .reset:hover{
   background: rgba(0, 255, 0, 0.1);
+  font-size: 1.5em;
 }
+
+.reset:active{
+  background: rgba(0, 255, 0, 0.5);
+}
+
 .reset p {
   position: absolute;
   top: 50%;
@@ -44,12 +52,15 @@ body {
   background: #000;
   color: #fff;
 }
+
 .options p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* PLAYERS */
 
 .player {
   position: relative;
@@ -64,13 +75,17 @@ body {
   height: 100%;
   position: absolute;
   z-index: 200;
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 48px;
 }
+
 .buttons p {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-53%, -50%);
 }
+
 .decrease {
   float: left;
   text-align: center;
@@ -78,10 +93,18 @@ body {
   height: 100%;
   position: relative;
   cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
 }
+
 .decrease:hover{
-  background: rgba(255, 0, 0, 0.1);
+  background: rgba(255, 0, 0, 0.3);
+  font-size: 2em;
 }
+
+.decrease:active{
+  background: rgba(255, 0, 0, 0.5);
+}
+
 .increase {
   float: right;
   text-align: center;
@@ -89,10 +112,18 @@ body {
   height: 100%;
   position: relative;
   cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
 }
+
 .increase:hover{
-  background: rgba(0, 0, 255, 0.1);
+  background: rgba(0, 0, 255, 0.3);
+  font-size: 2em;
 }
+
+.increase:active{
+  background: rgba(0, 0, 255, 0.5);
+}
+
 .value {
   width: 100%;
   text-align: center;
