@@ -1,8 +1,5 @@
 body {
   background: #0EF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: 'Open Sans', sans-serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -10,32 +7,32 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-size: 72px
 }
+
 /* CORPO DO APP */
 .wrapper{
   width: 320px;
   height: 480px;
   background: #fff;
   margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* DIVISOR E FOOTER */
-
 .reset {
   position: relative;
   width: 100%;
   height: 10%;
   cursor: pointer;
-  transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  font-size: 0.25em;
 }
 
 .reset:hover{
-  background: rgba(0, 255, 0, 0.1);
-  font-size: 1.5em;
-}
-
-.reset:active{
-  background: rgba(0, 255, 0, 0.5);
+  background: rgba(0, 255, 0, 0.3);
 }
 
 .reset p {
@@ -51,6 +48,7 @@ body {
   height: 10%;
   background: #000;
   color: #fff;
+  font-size: 0.25em;
 }
 
 .options p {
@@ -61,13 +59,18 @@ body {
 }
 
 /* PLAYERS */
-
 .player {
   position: relative;
   width: 100%;
   height: 40%;
-  font-size: 72px;
+  font-size: 1em;
   background-color: #eeeeee;
+}
+
+.player-one{
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
 }
 
 .buttons {
@@ -76,7 +79,7 @@ body {
   position: absolute;
   z-index: 200;
   font-family: 'FontAwesome', sans-serif;
-  font-size: 48px;
+  font-size: 0.75em;
 }
 
 .buttons p {
@@ -93,16 +96,10 @@ body {
   height: 100%;
   position: relative;
   cursor: pointer;
-  transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
 }
 
 .decrease:hover{
   background: rgba(255, 0, 0, 0.3);
-  font-size: 2em;
-}
-
-.decrease:active{
-  background: rgba(255, 0, 0, 0.5);
 }
 
 .increase {
@@ -112,16 +109,10 @@ body {
   height: 100%;
   position: relative;
   cursor: pointer;
-  transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
 }
 
 .increase:hover{
   background: rgba(0, 0, 255, 0.3);
-  font-size: 2em;
-}
-
-.increase:active{
-  background: rgba(0, 0, 255, 0.5);
 }
 
 .value {
