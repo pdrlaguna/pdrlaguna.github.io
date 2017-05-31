@@ -221,9 +221,9 @@
 #u16 {
   position:absolute;
   left:185px;
-  top:110px;
+  top:104px;
   width:450px;
-  height:230px;
+  height:236px;
   text-align:left;
 }
 #u16_img {
@@ -231,12 +231,12 @@
   left:-25px;
   top:-15px;
   width:500px;
-  height:280px;
+  height:286px;
 }
 #u17 {
   position:absolute;
   left:24px;
-  top:24px;
+  top:32px;
   width:402px;
   word-wrap:break-word;
 }
@@ -365,7 +365,7 @@
 #u28 {
   position:absolute;
   left:210px;
-  top:121px;
+  top:124px;
   width:34px;
   height:11px;
   font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
