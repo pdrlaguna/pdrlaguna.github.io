@@ -19,70 +19,10 @@
     function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 13,
-      center: {lat:-11.645375, lng:-45.680841},
+      disableDefaultUI: true,
+      center: {lat:-12.135647, lng:-46.129419}, 
       mapTypeId: google.maps.MapTypeId.SATELLITE
     });
-/*
-    var firstPlantationCoords = [
-      {lat:-11.645375, lng:-45.680841},
-      {lat:-11.659129, lng:-45.685551},
-      {lat:-11.663311, lng:-45.676571},
-      {lat:-11.649567, lng:-45.671894}
-    ];
-
-
-    // Construct the polygon.
-    var farm = new google.maps.Polygon({
-      paths: firstPlantationCoords,
-      strokeColor: '#FF0000',
-      strokeOpacity: 1,
-      strokeWeight: 2,
-      fillColor: '#FF0000',
-      fillOpacity: 0.35
-    });
-
-    farm.setMap(map);*/
-    }
-
-
-/*
-    [[{lat:-11.645375, lng:-45.680841},
-     {lat:-11.659129, lng:-45.685551},
-     {lat:-11.663311, lng:-45.676571},
-     {lat:-11.649567, lng:-45.671894}],
-
-    [{lat:-11.663311, lng:-45.67656},
-     {lat:-11.671843, lng:-45.679478},
-     {lat:-11.675983, lng:-45.670638},
-     {lat:-11.66743, lng:-45.66772}],
-
-    [{lat:-11.649578, lng:-45.671893},
-     {lat:-11.663311, lng:-45.67656},
-     {lat:-11.66743, lng:-45.667709},
-     {lat:-11.653739, lng:-45.662989}],
-
-    [{lat:-11.66743, lng:-45.66772},
-     {lat:-11.675983, lng:-45.670638},
-     {lat:-11.680164, lng:-45.661712},
-     {lat:-11.671591, lng:-45.658761}],
-
-    [{:lat:-11.653707, lng:-45.662978},
-     {:lat:-11.66743, lng:-45.66772},
-     {:lat:-11.671591, lng:-45.658751},
-     {:lat:-11.657952, lng:-45.653987}],
-
-    [{lat:-11.67158, lng:-45.658772},
-     {lat:-11.680175, lng:-45.661712},
-     {lat:-11.684483, lng:-45.65255},
-     {lat:-11.675857, lng:-45.649588}],
-
-    [{lat:-11.657963, lng:-45.653976},
-     {lat:-11.671591, lng:-45.658762},
-     {lat:-11.675868, lng:-45.649589},
-     {lat:-11.662292, lng:-45.644782}]]
-*/
-
-
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN1Sr3_PlqMzNoh1NvO2h-U6xwVHrrnnQ&callback=initMap" async defer></script>
 </body>
