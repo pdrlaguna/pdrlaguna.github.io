@@ -206,6 +206,13 @@ strong {
   grid-template-rows: auto;
 }
 
+.container.concept {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .paragraph {
   margin-top: 8px;
   color: #fff;
