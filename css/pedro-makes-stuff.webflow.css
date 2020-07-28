@@ -1020,7 +1020,7 @@ strong {
   min-height: 545px;
   background-color: #f5f6fa;
   background-image: url('../images/blurry-gradient.jpg');
-  background-position: 0% 50%;
+  background-position: 0% 100%;
   background-size: auto;
   background-attachment: scroll;
 }
