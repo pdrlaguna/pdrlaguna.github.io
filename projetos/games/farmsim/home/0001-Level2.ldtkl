@@ -1,0 +1,53 @@
+{
+	"__header__": {
+		"fileType": "LDtk Project JSON",
+		"app": "LDtk",
+		"doc": "https://ldtk.io/json",
+		"schema": "https://ldtk.io/files/JSON_SCHEMA.json",
+		"appAuthor": "Sebastien 'deepnight' Benard",
+		"appVersion": "0.8.1",
+		"url": "https://ldtk.io"
+	},
+	"identifier": "Level2",
+	"uid": 4,
+	"worldX": 224,
+	"worldY": 48,
+	"pxWid": 256,
+	"pxHei": 160,
+	"__bgColor": "#696A79",
+	"bgColor": null,
+	"bgRelPath": null,
+	"bgPos": null,
+	"bgPivotX": 0.5,
+	"bgPivotY": 0.5,
+	"__bgPos": null,
+	"externalRelPath": null,
+	"fieldInstances": [],
+	"layerInstances": [
+		{
+			"__identifier": "Tiles",
+			"__type": "Tiles",
+			"__cWid": 16,
+			"__cHei": 10,
+			"__gridSize": 16,
+			"__opacity": 1,
+			"__pxTotalOffsetX": 0,
+			"__pxTotalOffsetY": 0,
+			"__tilesetDefUid": 2,
+			"__tilesetRelPath": "tileset.png",
+			"levelId": 4,
+			"layerDefUid": 3,
+			"pxOffsetX": 0,
+			"pxOffsetY": 0,
+			"visible": true,
+			"intGrid": [],
+			"intGridCsv": [],
+			"autoLayerTiles": [],
+			"seed": 2772137,
+			"overrideTilesetUid": null,
+			"gridTiles": [],
+			"entityInstances": []
+		}
+	],
+	"__neighbours": [{ "levelUid": 0, "dir": "w" }]
+}
