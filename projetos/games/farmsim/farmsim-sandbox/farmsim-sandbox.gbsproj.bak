@@ -796,7 +796,7 @@
                                         "command": "EVENT_CHOICE",
                                         "args": {
                                             "variable": "L0",
-                                            "trueText": "Go to bed.",
+                                            "trueText": "Go to bed",
                                             "falseText": "Not now..."
                                         }
                                     },
@@ -907,7 +907,7 @@
                             "args": {
                                 "variable": "L0",
                                 "trueText": "Skip the day...",
-                                "falseText": "Go back.",
+                                "falseText": "Go back",
                                 "__collapse": false
                             }
                         },
@@ -964,25 +964,6 @@
                     "height": 2
                 }
             ]
-        },
-        {
-            "name": "Scene 2",
-            "backgroundId": "a506e269-bc93-4daf-92f1-2fe69535a179",
-            "width": 20,
-            "height": 22,
-            "type": "0",
-            "paletteIds": [],
-            "collisions": [],
-            "tileColors": [],
-            "script": [],
-            "playerHit1Script": [],
-            "playerHit2Script": [],
-            "playerHit3Script": [],
-            "id": "aefd78ac-cd91-4037-bcb5-8e24e0c0e809",
-            "x": 608.0889556578235,
-            "y": 419.6714131550551,
-            "actors": [],
-            "triggers": []
         }
     ],
     "backgrounds": [
@@ -1275,8 +1256,8 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1045,
-        "worldScrollY": 1032,
+        "worldScrollX": 1152,
+        "worldScrollY": 1065,
         "zoom": 301.4581298828125,
         "customColorsEnabled": true,
         "customHead": "",
