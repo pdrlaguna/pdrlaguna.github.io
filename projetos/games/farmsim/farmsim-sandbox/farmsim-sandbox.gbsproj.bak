@@ -976,7 +976,7 @@
             "imageHeight": 176,
             "filename": "home.png",
             "inode": "12901974243",
-            "_v": 1618181796526
+            "_v": 1618184228645
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -987,7 +987,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "12901940137",
-            "_v": 1618181796526
+            "_v": 1618184228645
         }
     ],
     "spriteSheets": [
@@ -998,7 +998,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "12901940133",
-            "_v": 1618181796526
+            "_v": 1618184228646
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -1007,7 +1007,7 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "12901940132",
-            "_v": 1618181796526
+            "_v": 1618184228646
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -1016,7 +1016,7 @@
             "type": "static",
             "filename": "actor_static.png",
             "inode": "12901940129",
-            "_v": 1618181796526
+            "_v": 1618184228646
         },
         {
             "id": "6d701307-ad46-4a34-8838-77a45ff5a8d4",
@@ -1025,7 +1025,7 @@
             "type": "actor_animated",
             "filename": "character.png",
             "inode": "12901940130",
-            "_v": 1618181796526
+            "_v": 1618184228646
         },
         {
             "id": "9dea8d96-bc33-4149-b287-7eb0b3b67320",
@@ -1034,7 +1034,7 @@
             "type": "actor_animated",
             "filename": "character_generic.png",
             "inode": "12901949621",
-            "_v": 1618181796526
+            "_v": 1618184228646
         },
         {
             "id": "5aca03ba-331f-4b9c-bc32-9d593f5ee637",
@@ -1043,7 +1043,7 @@
             "type": "actor_animated",
             "filename": "dog.png",
             "inode": "12901965153",
-            "_v": 1618181796526
+            "_v": 1618184228646
         },
         {
             "id": "2669d0a8-7b4c-4667-8d3c-ccd09c44a047",
@@ -1052,7 +1052,7 @@
             "type": "animated",
             "filename": "plants.png",
             "inode": "12901973448",
-            "_v": 1618181796526
+            "_v": 1618184228646
         },
         {
             "id": "2990722c-6cda-4307-bdf0-981ff8450b6e",
@@ -1061,7 +1061,7 @@
             "type": "actor_animated",
             "filename": "princess.png",
             "inode": "12901964417",
-            "_v": 1618181796526
+            "_v": 1618184228646
         },
         {
             "id": "7f4d2116-94fa-4d9f-a3d6-85225071d984",
@@ -1070,7 +1070,7 @@
             "type": "actor_animated",
             "filename": "zelda_clone.png",
             "inode": "12901955872",
-            "_v": 1618181796526
+            "_v": 1618184228646
         }
     ],
     "palettes": [
@@ -1079,9 +1079,9 @@
             "name": "Default BG 1",
             "colors": [
                 "F0F0D8",
-                "98A0A0",
-                "605860",
-                "484048"
+                "B8C0C8",
+                "908080",
+                "706070"
             ],
             "defaultName": "Default BG 1",
             "defaultColors": [
@@ -1113,8 +1113,8 @@
             "name": "Default BG 3",
             "colors": [
                 "F8D8A8",
-                "E0A878",
-                "785888",
+                "E00078",
+                "880068",
                 "002030"
             ],
             "defaultName": "Default BG 3",
@@ -1163,9 +1163,9 @@
             "id": "default-bg-6",
             "name": "Default BG 6",
             "colors": [
-                "F8E8B8",
-                "F8C038",
-                "985028",
+                "F8F858",
+                "A88028",
+                "A05028",
                 "201008"
             ],
             "defaultName": "Default BG 6",
@@ -1219,7 +1219,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "12901940135",
-            "_v": 1618181796521
+            "_v": 1618184228639
         }
     ],
     "variables": [
@@ -1228,16 +1228,16 @@
             "name": "currentday"
         },
         {
-            "id": "6835c8d3-d3f5-46f0-bc4a-a236593afd07__L0",
-            "name": "workedToday?"
-        },
-        {
             "id": "1",
             "name": "vase01.state"
         },
         {
             "id": "2",
             "name": "vases.workedOn?"
+        },
+        {
+            "id": "6835c8d3-d3f5-46f0-bc4a-a236593afd07__L0",
+            "name": "workedToday?"
         }
     ],
     "engineFieldValues": [
@@ -1256,8 +1256,8 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1152,
-        "worldScrollY": 1065,
+        "worldScrollX": 1153,
+        "worldScrollY": 1066,
         "zoom": 301.4581298828125,
         "customColorsEnabled": true,
         "customHead": "",
@@ -1271,7 +1271,7 @@
         ],
         "defaultSpritePaletteId": "default-sprite",
         "defaultUIPaletteId": "default-ui",
-        "playerPaletteId": "",
+        "playerPaletteId": "default-sprite",
         "navigatorSplitSizes": [
             610,
             203,
