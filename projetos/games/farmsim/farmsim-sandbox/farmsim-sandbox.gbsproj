@@ -796,7 +796,7 @@
                                         "command": "EVENT_CHOICE",
                                         "args": {
                                             "variable": "L0",
-                                            "trueText": "Go to bed.",
+                                            "trueText": "Go to bed",
                                             "falseText": "Not now..."
                                         }
                                     },
@@ -907,7 +907,7 @@
                             "args": {
                                 "variable": "L0",
                                 "trueText": "Skip the day...",
-                                "falseText": "Go back.",
+                                "falseText": "Go back",
                                 "__collapse": false
                             }
                         },
@@ -1275,8 +1275,8 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1045,
-        "worldScrollY": 1032,
+        "worldScrollX": 1044,
+        "worldScrollY": 1033,
         "zoom": 301.4581298828125,
         "customColorsEnabled": true,
         "customHead": "",
