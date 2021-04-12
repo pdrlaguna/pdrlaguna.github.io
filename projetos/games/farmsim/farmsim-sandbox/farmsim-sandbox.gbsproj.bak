@@ -1666,7 +1666,7 @@
                     "id": "83248dbc-dcca-46ab-aa50-5165c54d2b14",
                     "x": 8,
                     "y": 8,
-                    "width": 3,
+                    "width": 2,
                     "height": 3
                 },
                 {
@@ -1716,9 +1716,9 @@
                         }
                     ],
                     "id": "72fe746b-76fc-4583-9fa7-01ed067a8033",
-                    "x": 11,
+                    "x": 12,
                     "y": 8,
-                    "width": 3,
+                    "width": 2,
                     "height": 3
                 },
                 {
@@ -2024,25 +2024,6 @@
                     "height": 16
                 }
             ]
-        },
-        {
-            "name": "Scene 2",
-            "backgroundId": "a506e269-bc93-4daf-92f1-2fe69535a179",
-            "width": 20,
-            "height": 22,
-            "type": "0",
-            "paletteIds": [],
-            "collisions": [],
-            "tileColors": [],
-            "script": [],
-            "playerHit1Script": [],
-            "playerHit2Script": [],
-            "playerHit3Script": [],
-            "id": "431913f4-07cc-459e-b27f-197176ff4eb0",
-            "x": 504.3741854485596,
-            "y": 664.2190198368662,
-            "actors": [],
-            "triggers": []
         }
     ],
     "backgrounds": [
@@ -2360,7 +2341,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 320,
-        "worldScrollY": 297,
+        "worldScrollY": 568,
         "zoom": 157.02728271484375,
         "customColorsEnabled": true,
         "customHead": "",
