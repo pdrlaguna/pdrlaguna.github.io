@@ -340,28 +340,8 @@
                 15,
                 15,
                 15,
-                15,
-                15,
                 0,
                 0,
-                15,
-                15,
-                15,
-                15,
-                0,
-                0,
-                15,
-                0,
-                0,
-                15,
-                0,
-                0,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
                 0,
                 0,
                 15,
@@ -376,18 +356,18 @@
                 15,
                 0,
                 0,
+                15,
+                15,
+                15,
+                15,
                 0,
                 0,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
+                15,
+                15,
+                15,
+                15,
                 0,
                 0,
                 15,
@@ -414,6 +394,26 @@
                 0,
                 0,
                 15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                0,
+                0,
+                15,
                 15,
                 15,
                 15,
@@ -439,8 +439,8 @@
                 0,
                 0,
                 0,
-                15,
-                15,
+                0,
+                0,
                 0,
                 0,
                 0,
@@ -1130,8 +1130,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "eb442c93-c192-42c6-ad41-b7fc20394a2e",
-                    "x": 10,
-                    "y": 13
+                    "x": 8,
+                    "y": 8
                 },
                 {
                     "name": "vase01",
@@ -1360,44 +1360,6 @@
                     "id": "635e887c-af85-45fa-af69-5afaf9802d5f",
                     "x": 6,
                     "y": 16
-                },
-                {
-                    "name": "vase07",
-                    "frame": 0,
-                    "animate": false,
-                    "spriteSheetId": "2669d0a8-7b4c-4667-8d3c-ccd09c44a047",
-                    "spriteType": "static",
-                    "direction": "down",
-                    "moveSpeed": 1,
-                    "animSpeed": 3,
-                    "paletteId": "default-bg-2",
-                    "isPinned": false,
-                    "collisionGroup": "",
-                    "script": [],
-                    "startScript": [
-                        {
-                            "id": "17142fd6-43fe-432a-ac04-d8ecf06eed2e",
-                            "command": "EVENT_ACTOR_SET_FRAME",
-                            "args": {
-                                "actorId": "$self$",
-                                "frame": {
-                                    "type": "variable",
-                                    "value": "8"
-                                }
-                            }
-                        },
-                        {
-                            "id": "2be53e85-1c02-4459-8dc4-755f8ee7e70e",
-                            "command": "EVENT_END"
-                        }
-                    ],
-                    "updateScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "id": "e414a02c-42cf-4c48-be8e-9ba756e2b850",
-                    "x": 8,
-                    "y": 16
                 }
             ],
             "triggers": [
@@ -1448,9 +1410,9 @@
                         }
                     ],
                     "id": "6835c8d3-d3f5-46f0-bc4a-a236593afd07",
-                    "x": 12,
+                    "x": 11,
                     "y": 16,
-                    "width": 2,
+                    "width": 3,
                     "height": 3
                 },
                 {
@@ -1716,9 +1678,9 @@
                         }
                     ],
                     "id": "72fe746b-76fc-4583-9fa7-01ed067a8033",
-                    "x": 12,
+                    "x": 11,
                     "y": 8,
-                    "width": 2,
+                    "width": 3,
                     "height": 3
                 },
                 {
@@ -1771,58 +1733,6 @@
                     "x": 14,
                     "y": 8,
                     "width": 3,
-                    "height": 3
-                },
-                {
-                    "name": "VASE07",
-                    "trigger": "walk",
-                    "script": [
-                        {
-                            "id": "a5c6bb90-37d0-4ee5-83cb-6f25ecd0816c",
-                            "command": "EVENT_SET_INPUT_SCRIPT",
-                            "args": {
-                                "input": [
-                                    "a"
-                                ],
-                                "persist": false,
-                                "__scriptTabs": "press"
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "255848f4-679f-47c5-a5ed-ee1ff06586b6",
-                                        "command": "EVENT_INC_VALUE",
-                                        "args": {
-                                            "variable": "8"
-                                        }
-                                    },
-                                    {
-                                        "id": "5b2d1b47-b683-48de-8cf1-825651a90106",
-                                        "command": "EVENT_ACTOR_SET_FRAME",
-                                        "args": {
-                                            "actorId": "e414a02c-42cf-4c48-be8e-9ba756e2b850",
-                                            "frame": {
-                                                "type": "variable",
-                                                "value": "8"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "id": "dc2739df-61ba-4d5c-af78-b486cb08168b",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "id": "0d0d13c5-1250-4e09-949d-2011c396a01c",
-                            "command": "EVENT_END"
-                        }
-                    ],
-                    "id": "dc0203cc-46a5-4570-9389-8c1655d0dda1",
-                    "x": 8,
-                    "y": 16,
-                    "width": 2,
                     "height": 3
                 },
                 {
@@ -1926,7 +1836,7 @@
                     "id": "30f9208a-9774-4745-947c-59e1d895533f",
                     "x": 6,
                     "y": 16,
-                    "width": 2,
+                    "width": 3,
                     "height": 3
                 },
                 {
@@ -2340,9 +2250,9 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 320,
-        "worldScrollY": 297,
-        "zoom": 157.02728271484375,
+        "worldScrollX": 536,
+        "worldScrollY": 516,
+        "zoom": 200,
         "customColorsEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
