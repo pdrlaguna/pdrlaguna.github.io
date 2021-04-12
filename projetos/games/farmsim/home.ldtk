@@ -9,7 +9,7 @@
 		"url": "https://ldtk.io"
 	},
 	"jsonVersion": "0.8.1",
-	"nextUid": 80,
+	"nextUid": 82,
 	"worldLayout": "Free",
 	"worldGridWidth": 256,
 	"worldGridHeight": 256,
@@ -30,6 +30,25 @@
 	"flags": [],
 	"defs": { "layers": [
 		{
+			"__type": "Tiles",
+			"identifier": "Tiles",
+			"type": "Tiles",
+			"uid": 3,
+			"gridSize": 16,
+			"displayOpacity": 1,
+			"pxOffsetX": 0,
+			"pxOffsetY": 0,
+			"requiredTags": [],
+			"excludedTags": [],
+			"intGridValues": [{ "value": 1, "identifier": null, "color": "#000000" }],
+			"autoTilesetDefUid": null,
+			"autoRuleGroups": [],
+			"autoSourceLayerDefUid": null,
+			"tilesetDefUid": 2,
+			"tilePivotX": 0,
+			"tilePivotY": 0
+		},
+		{
 			"__type": "IntGrid",
 			"identifier": "IntGrid",
 			"type": "IntGrid",
@@ -40,7 +59,7 @@
 			"pxOffsetY": 0,
 			"requiredTags": [],
 			"excludedTags": [],
-			"intGridValues": [ { "value": 1, "identifier": "walls", "color": "#000000" }, { "value": 2, "identifier": "rooms", "color": "#F4F3EB" } ],
+			"intGridValues": [ { "value": 1, "identifier": "background", "color": "#000000" }, { "value": 2, "identifier": "rooms", "color": "#F4F3EB" } ],
 			"autoTilesetDefUid": 2,
 			"autoRuleGroups": [
 				{
@@ -76,7 +95,7 @@
 					"uid": 60,
 					"name": "room",
 					"active": true,
-					"collapsed": true,
+					"collapsed": false,
 					"rules": [
 						{
 							"uid": 64,
@@ -364,7 +383,7 @@
 			"identifier": "AutoLayer",
 			"type": "AutoLayer",
 			"uid": 36,
-			"gridSize": 8,
+			"gridSize": 16,
 			"displayOpacity": 1,
 			"pxOffsetX": 0,
 			"pxOffsetY": 0,
@@ -373,27 +392,8 @@
 			"intGridValues": [{ "value": 1, "identifier": null, "color": "#000000" }],
 			"autoTilesetDefUid": 2,
 			"autoRuleGroups": [],
-			"autoSourceLayerDefUid": null,
+			"autoSourceLayerDefUid": 59,
 			"tilesetDefUid": null,
-			"tilePivotX": 0,
-			"tilePivotY": 0
-		},
-		{
-			"__type": "Tiles",
-			"identifier": "Tiles",
-			"type": "Tiles",
-			"uid": 3,
-			"gridSize": 16,
-			"displayOpacity": 1,
-			"pxOffsetX": 0,
-			"pxOffsetY": 0,
-			"requiredTags": [],
-			"excludedTags": [],
-			"intGridValues": [{ "value": 1, "identifier": null, "color": "#000000" }],
-			"autoTilesetDefUid": null,
-			"autoRuleGroups": [],
-			"autoSourceLayerDefUid": null,
-			"tilesetDefUid": 2,
 			"tilePivotX": 0,
 			"tilePivotY": 0
 		}
@@ -416,7 +416,7 @@
 	], "enums": [], "externalEnums": [], "levelFields": [] },
 	"levels": [
 		{
-			"identifier": "Level1",
+			"identifier": "Room",
 			"uid": 0,
 			"worldX": 64,
 			"worldY": 48,
@@ -429,13 +429,13 @@
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
 			"__bgPos": null,
-			"externalRelPath": "home/0000-Level1.ldtkl",
+			"externalRelPath": "home/0000-Room.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
-			"__neighbours": [{ "levelUid": 4, "dir": "e" }]
+			"__neighbours": [ { "levelUid": 4, "dir": "e" }, { "levelUid": 80, "dir": "n" }, { "levelUid": 81, "dir": "s" } ]
 		},
 		{
-			"identifier": "Level2",
+			"identifier": "Cellar",
 			"uid": 4,
 			"worldX": 224,
 			"worldY": 48,
@@ -448,10 +448,48 @@
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
 			"__bgPos": null,
-			"externalRelPath": "home/0001-Level2.ldtkl",
+			"externalRelPath": "home/0001-Cellar.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
-			"__neighbours": [{ "levelUid": 0, "dir": "w" }]
+			"__neighbours": [ { "levelUid": 0, "dir": "w" }, { "levelUid": 80, "dir": "n" } ]
+		},
+		{
+			"identifier": "Dungeon",
+			"uid": 80,
+			"worldX": 176,
+			"worldY": -96,
+			"pxWid": 208,
+			"pxHei": 144,
+			"__bgColor": "#696A79",
+			"bgColor": null,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__bgPos": null,
+			"externalRelPath": "home/0002-Dungeon.ldtkl",
+			"fieldInstances": [],
+			"layerInstances": null,
+			"__neighbours": [ { "levelUid": 0, "dir": "s" }, { "levelUid": 4, "dir": "s" } ]
+		},
+		{
+			"identifier": "Garden",
+			"uid": 81,
+			"worldX": -64,
+			"worldY": 224,
+			"pxWid": 352,
+			"pxHei": 304,
+			"__bgColor": "#696A79",
+			"bgColor": null,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__bgPos": null,
+			"externalRelPath": "home/0003-Garden.ldtkl",
+			"fieldInstances": [],
+			"layerInstances": null,
+			"__neighbours": [{ "levelUid": 0, "dir": "n" }]
 		}
 	]
 }
