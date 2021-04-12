@@ -456,8 +456,8 @@
             "tileColors": [
                 0,
                 0,
-                0,
-                0,
+                2,
+                2,
                 0,
                 0,
                 0,
@@ -476,8 +476,8 @@
                 0,
                 0,
                 0,
-                0,
-                0,
+                2,
+                2,
                 0,
                 0,
                 0,
@@ -496,28 +496,28 @@
                 0,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
-                2,
-                2,
-                0,
-                2,
-                0,
-                0,
-                2,
-                2,
                 2,
                 2,
                 0,
                 0,
                 2,
+                2,
+                0,
+                2,
+                0,
+                0,
+                2,
+                2,
+                2,
+                2,
+                0,
+                0,
+                2,
                 0,
                 0,
                 0,
-                0,
-                0,
+                2,
+                2,
                 0,
                 0,
                 2,
@@ -922,9 +922,56 @@
                             "args": {
                                 "text": [
                                     "Well... skipping\nthe day doesn't\nreally do anything",
-                                    "You can just keep\nclicking and your\nplant your grow..."
+                                    "You can just keep\nclicking and your\nplant your grow...",
+                                    "You can use your\nwardrobe to load\na saved gamed."
                                 ],
                                 "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "1b994a26-a9f1-4268-a02f-6bb326c229fc",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Save game?",
+                                "falseText": "Not now"
+                            }
+                        },
+                        {
+                            "id": "c8e8d40b-f174-4436-b302-8976506adea1",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "3c866bdb-09ab-4ef4-add3-cda4c421386e",
+                                        "command": "EVENT_SAVE_DATA",
+                                        "args": {}
+                                    },
+                                    {
+                                        "id": "db245e29-f83a-4dc5-bc85-8ecf30b04275",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Game saved!\n\n"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "a5cbb19a-da44-4447-a219-70c454bfabed",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "eaa6eadd-34db-4911-931a-a6f9d61114ff",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -1883,6 +1930,76 @@
                     "height": 3
                 },
                 {
+                    "name": "WARDROBE",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "ece57278-4327-44dc-ae0a-feac13ab9272",
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "a"
+                                ],
+                                "persist": false,
+                                "__scriptTabs": "press"
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "c834039e-b03b-438a-a470-6e0376b6d7c9",
+                                        "command": "EVENT_CHOICE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "trueText": "Load saved game",
+                                            "falseText": "Not now..."
+                                        }
+                                    },
+                                    {
+                                        "id": "590cb64c-7ed5-4a7f-9cbb-d024fc62d773",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "baf85322-e869-42cc-aee4-ffb29b840ad4",
+                                                    "command": "EVENT_LOAD_DATA",
+                                                    "args": {}
+                                                },
+                                                {
+                                                    "id": "efddfe28-d486-47a1-be8d-425c24e97636",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "7ad6b070-4a4b-4b73-b4c2-68abaa10004b",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "951348ac-d561-42a3-9359-35bd4c51ccfd",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "05197d47-bc23-4fd4-9373-9a623e61ed64",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "ae34f17f-08de-4d7a-a8c2-d89fa2fc95df",
+                    "x": 2,
+                    "y": 4,
+                    "width": 2,
+                    "height": 2
+                },
+                {
                     "name": "_CLEAR",
                     "trigger": "walk",
                     "script": [
@@ -1907,6 +2024,25 @@
                     "height": 16
                 }
             ]
+        },
+        {
+            "name": "Scene 2",
+            "backgroundId": "a506e269-bc93-4daf-92f1-2fe69535a179",
+            "width": 20,
+            "height": 22,
+            "type": "0",
+            "paletteIds": [],
+            "collisions": [],
+            "tileColors": [],
+            "script": [],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": [],
+            "id": "431913f4-07cc-459e-b27f-197176ff4eb0",
+            "x": 504.3741854485596,
+            "y": 664.2190198368662,
+            "actors": [],
+            "triggers": []
         }
     ],
     "backgrounds": [
@@ -2223,9 +2359,9 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1131,
-        "worldScrollY": 1119,
-        "zoom": 318.51165771484375,
+        "worldScrollX": 320,
+        "worldScrollY": 297,
+        "zoom": 157.02728271484375,
         "customColorsEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
