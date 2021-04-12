@@ -421,8 +421,8 @@
                 15,
                 15,
                 15,
-                15,
-                15,
+                0,
+                0,
                 15,
                 15,
                 15,
@@ -498,10 +498,10 @@
                 0,
                 2,
                 2,
-                0,
-                0,
+                2,
                 2,
                 2,
+                2,
                 0,
                 2,
                 0,
@@ -518,10 +518,10 @@
                 0,
                 2,
                 2,
-                0,
-                0,
                 2,
                 2,
+                2,
+                2,
                 0,
                 2,
                 0,
@@ -778,12 +778,12 @@
                 2,
                 0,
                 0,
-                2,
                 2,
                 2,
                 2,
                 2,
-                2,
+                0,
+                0,
                 0,
                 0,
                 2,
@@ -802,10 +802,10 @@
                 2,
                 2,
                 2,
-                2,
-                2,
+                0,
                 0,
                 0,
+                0,
                 2,
                 2,
                 2,
@@ -873,8 +873,6 @@
                 2,
                 2,
                 2,
-                0,
-                0,
                 0,
                 0,
                 0,
@@ -884,8 +882,10 @@
                 0,
                 0,
                 0,
-                0,
-                0,
+                2,
+                2,
+                2,
+                2,
                 0,
                 0,
                 0,
@@ -1544,7 +1544,7 @@
                                             "sceneId": "683f9ea6-5f82-4a11-8b74-bc4d5cd73d68",
                                             "x": 4,
                                             "y": 4,
-                                            "direction": "",
+                                            "direction": "left",
                                             "fadeSpeed": "3"
                                         }
                                     },
@@ -1932,6 +1932,72 @@
                     "y": 4,
                     "width": 16,
                     "height": 16
+                },
+                {
+                    "name": "",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "c7ade965-5005-42ab-adb7-29fb52970f69",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Skip the day...",
+                                "falseText": "Go back",
+                                "__collapse": false
+                            }
+                        },
+                        {
+                            "id": "593c6727-6a41-41fb-8083-5857d1525927",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false,
+                                "__collapse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "8f09eb22-f5c6-4fcc-a45c-4ee6bbecdfa7",
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "683f9ea6-5f82-4a11-8b74-bc4d5cd73d68",
+                                            "x": 4,
+                                            "y": 4,
+                                            "direction": "left",
+                                            "fadeSpeed": "3"
+                                        }
+                                    },
+                                    {
+                                        "id": "103641c5-83f2-4f9d-875e-fb10585d0457",
+                                        "command": "EVENT_INC_VALUE",
+                                        "args": {
+                                            "variable": "0"
+                                        }
+                                    },
+                                    {
+                                        "id": "8594260a-04d7-477d-a16c-e113eba06324",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "74eb1348-ac15-4219-90e0-b4912dc81b29",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "5d6e7819-40d6-4fbe-adcf-9d9b19c1ead8",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "57f1c09f-25f9-41f0-bdc2-e4fd012da420",
+                    "x": 9,
+                    "y": 21,
+                    "width": 2,
+                    "height": 1
                 }
             ]
         }
@@ -1945,8 +2011,8 @@
             "imageWidth": 160,
             "imageHeight": 176,
             "filename": "home.png",
-            "inode": "12901995576",
-            "_v": 1618197242326
+            "inode": "12901999954",
+            "_v": 1618232308826
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -1957,7 +2023,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "12901940137",
-            "_v": 1618197242326
+            "_v": 1618232308826
         }
     ],
     "spriteSheets": [
@@ -1968,7 +2034,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "12901940133",
-            "_v": 1618197242326
+            "_v": 1618232308826
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -1977,7 +2043,7 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "12901940132",
-            "_v": 1618197242326
+            "_v": 1618232308826
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -1986,7 +2052,7 @@
             "type": "static",
             "filename": "actor_static.png",
             "inode": "12901940129",
-            "_v": 1618197242326
+            "_v": 1618232308826
         },
         {
             "id": "6d701307-ad46-4a34-8838-77a45ff5a8d4",
@@ -1995,7 +2061,7 @@
             "type": "actor_animated",
             "filename": "character.png",
             "inode": "12901940130",
-            "_v": 1618197242326
+            "_v": 1618232308826
         },
         {
             "id": "9dea8d96-bc33-4149-b287-7eb0b3b67320",
@@ -2004,7 +2070,7 @@
             "type": "actor_animated",
             "filename": "character_generic.png",
             "inode": "12901949621",
-            "_v": 1618197242326
+            "_v": 1618232308826
         },
         {
             "id": "5aca03ba-331f-4b9c-bc32-9d593f5ee637",
@@ -2013,7 +2079,7 @@
             "type": "actor_animated",
             "filename": "dog.png",
             "inode": "12901965153",
-            "_v": 1618197242327
+            "_v": 1618232308826
         },
         {
             "id": "2669d0a8-7b4c-4667-8d3c-ccd09c44a047",
@@ -2022,7 +2088,7 @@
             "type": "animated",
             "filename": "plants.png",
             "inode": "12901973448",
-            "_v": 1618197242326
+            "_v": 1618232308826
         },
         {
             "id": "2990722c-6cda-4307-bdf0-981ff8450b6e",
@@ -2031,7 +2097,7 @@
             "type": "actor_animated",
             "filename": "princess.png",
             "inode": "12901964417",
-            "_v": 1618197242327
+            "_v": 1618232308826
         },
         {
             "id": "7f4d2116-94fa-4d9f-a3d6-85225071d984",
@@ -2040,7 +2106,7 @@
             "type": "actor_animated",
             "filename": "zelda_clone.png",
             "inode": "12901955872",
-            "_v": 1618197242327
+            "_v": 1618232308826
         }
     ],
     "palettes": [
@@ -2189,7 +2255,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "12901940135",
-            "_v": 1618197242322
+            "_v": 1618232308818
         }
     ],
     "variables": [
