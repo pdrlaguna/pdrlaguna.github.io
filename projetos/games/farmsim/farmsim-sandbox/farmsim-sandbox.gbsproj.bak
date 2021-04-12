@@ -1930,30 +1930,6 @@
                     "height": 3
                 },
                 {
-                    "name": "_CLEAR",
-                    "trigger": "walk",
-                    "script": [
-                        {
-                            "id": "bc982c9b-5e93-4d8d-9a4b-f02d22d372ce",
-                            "command": "EVENT_REMOVE_INPUT_SCRIPT",
-                            "args": {
-                                "input": [
-                                    "a"
-                                ]
-                            }
-                        },
-                        {
-                            "id": "3884d5b6-d723-4479-9f08-725ef6412cdb",
-                            "command": "EVENT_END"
-                        }
-                    ],
-                    "id": "a7ef6a55-73b2-4d2f-991e-800ede871002",
-                    "x": 2,
-                    "y": 4,
-                    "width": 16,
-                    "height": 16
-                },
-                {
                     "name": "WARDROBE",
                     "trigger": "walk",
                     "script": [
@@ -2022,8 +1998,51 @@
                     "y": 4,
                     "width": 2,
                     "height": 2
+                },
+                {
+                    "name": "_CLEAR",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "bc982c9b-5e93-4d8d-9a4b-f02d22d372ce",
+                            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "a"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "3884d5b6-d723-4479-9f08-725ef6412cdb",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "a7ef6a55-73b2-4d2f-991e-800ede871002",
+                    "x": 2,
+                    "y": 4,
+                    "width": 16,
+                    "height": 16
                 }
             ]
+        },
+        {
+            "name": "Scene 2",
+            "backgroundId": "a506e269-bc93-4daf-92f1-2fe69535a179",
+            "width": 20,
+            "height": 22,
+            "type": "0",
+            "paletteIds": [],
+            "collisions": [],
+            "tileColors": [],
+            "script": [],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": [],
+            "id": "431913f4-07cc-459e-b27f-197176ff4eb0",
+            "x": 504.3741854485596,
+            "y": 664.2190198368662,
+            "actors": [],
+            "triggers": []
         }
     ],
     "backgrounds": [
@@ -2340,9 +2359,9 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1132,
-        "worldScrollY": 1119,
-        "zoom": 318.51165771484375,
+        "worldScrollX": 320,
+        "worldScrollY": 297,
+        "zoom": 157.02728271484375,
         "customColorsEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
