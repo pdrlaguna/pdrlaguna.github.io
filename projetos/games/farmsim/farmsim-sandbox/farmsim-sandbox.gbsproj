@@ -1130,8 +1130,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "eb442c93-c192-42c6-ad41-b7fc20394a2e",
-                    "x": 10,
-                    "y": 13
+                    "x": 8,
+                    "y": 8
                 },
                 {
                     "name": "vase01",
@@ -2340,8 +2340,8 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 320,
-        "worldScrollY": 297,
+        "worldScrollX": 322,
+        "worldScrollY": 299,
         "zoom": 157.02728271484375,
         "customColorsEnabled": true,
         "customHead": "",
