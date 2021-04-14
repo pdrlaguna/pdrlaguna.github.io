@@ -2698,7 +2698,7 @@
             "playerHit3Script": [],
             "id": "b3447bdf-f578-4482-9eae-c6cbb281d280",
             "x": 588,
-            "y": 437,
+            "y": 436.55730225658584,
             "actors": [],
             "triggers": [
                 {
@@ -2761,7 +2761,13 @@
             "width": 42,
             "height": 18,
             "type": "0",
-            "paletteIds": [],
+            "paletteIds": [
+                null,
+                null,
+                null,
+                "4f46dcde-5d68-4249-98fa-98a7affc3d09",
+                "default-bg-2"
+            ],
             "collisions": [
                 0,
                 0,
@@ -3822,8 +3828,8 @@
                 0,
                 0,
                 2,
-                2,
-                2,
+                1,
+                1,
                 2,
                 0,
                 5,
@@ -4278,14 +4284,182 @@
                 0,
                 0
             ],
-            "script": [],
+            "script": [
+                {
+                    "id": "ada59583-e9e6-4a16-8a5a-c23d158019c7",
+                    "command": "EVENT_END"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
             "id": "62b4828e-4f79-4a8d-b9bd-1bad90c041a5",
             "x": 527,
             "y": 241,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "2669d0a8-7b4c-4667-8d3c-ccd09c44a047",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 3,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "collisionGroup": "",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "id": "e45327a8-22f1-474c-802d-10950fbd74cf",
+                            "command": "EVENT_PALETTE_SET_BACKGROUND",
+                            "args": {
+                                "palette0": "",
+                                "palette1": "c882b276-7cdd-41e3-bc37-77073948236e",
+                                "palette2": "",
+                                "palette3": "",
+                                "palette4": "",
+                                "palette5": "",
+                                "__collapse": true,
+                                "__label": "None",
+                                "__comment": false
+                            }
+                        },
+                        {
+                            "id": "19cf24b3-a5d2-4049-8e36-3a69daf8c9b8",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "updateScript": [
+                        {
+                            "id": "9f262fde-d611-40d6-9922-c9e82b0574ef",
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 2,
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "55145fb3-d653-4844-a63d-95a5eac00ab8",
+                            "command": "EVENT_PALETTE_SET_BACKGROUND",
+                            "args": {
+                                "palette0": "",
+                                "palette1": "c882b276-7cdd-41e3-bc37-77073948236e",
+                                "palette2": "",
+                                "palette3": "",
+                                "palette4": "",
+                                "palette5": "",
+                                "__collapse": true,
+                                "__label": "None",
+                                "__comment": false
+                            }
+                        },
+                        {
+                            "id": "1fa7a943-6be9-4f81-ad3c-508598109c6d",
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 0.5,
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "a8ddaff1-cc73-430a-bff3-713c80daeebe",
+                            "command": "EVENT_PALETTE_SET_BACKGROUND",
+                            "args": {
+                                "palette0": "",
+                                "palette1": "6d3d0ba9-bf18-47ae-8012-ab6b39f33fbd",
+                                "palette2": "",
+                                "palette3": "",
+                                "palette4": "",
+                                "palette5": "",
+                                "__collapse": true,
+                                "__label": "Inner Single",
+                                "__comment": false
+                            }
+                        },
+                        {
+                            "id": "70f60eb5-9edf-47ce-9490-403d1e1b3053",
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 0.5,
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "52a5af5a-97c9-4782-bae4-5ce38ac9b414",
+                            "command": "EVENT_PALETTE_SET_BACKGROUND",
+                            "args": {
+                                "palette0": "",
+                                "palette1": "4f46dcde-5d68-4249-98fa-98a7affc3d09",
+                                "palette2": "",
+                                "palette3": "",
+                                "palette4": "",
+                                "palette5": "",
+                                "__collapse": true,
+                                "__label": "Two Rings",
+                                "__comment": false
+                            }
+                        },
+                        {
+                            "id": "e47af6b8-1b44-49fa-b205-496beb20108c",
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 0.5,
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "95d335fb-7058-4489-81e4-438fc2ca7b76",
+                            "command": "EVENT_PALETTE_SET_BACKGROUND",
+                            "args": {
+                                "palette0": "",
+                                "palette1": "5fa50abf-1a6c-4e95-9e8b-dc1f5f7906c2",
+                                "palette2": "",
+                                "palette3": "",
+                                "palette4": "",
+                                "palette5": "",
+                                "__collapse": true,
+                                "__label": "Outer Ring",
+                                "__comment": false
+                            }
+                        },
+                        {
+                            "id": "10d8e5d0-6ef5-4e4c-8845-44eeb99b41d1",
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 0.5,
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "1b2be14d-92d6-464d-b214-d22f3c03e91e",
+                            "command": "EVENT_PALETTE_SET_BACKGROUND",
+                            "args": {
+                                "palette0": "",
+                                "palette1": "c882b276-7cdd-41e3-bc37-77073948236e",
+                                "palette2": "",
+                                "palette3": "",
+                                "palette4": "",
+                                "palette5": "",
+                                "__collapse": true,
+                                "__label": "None",
+                                "__comment": false
+                            }
+                        },
+                        {
+                            "id": "8f1c30ec-2eef-481d-aec4-bda68a905dfb",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "3afc5e39-380f-472a-a0f5-f21d8205e71c",
+                    "x": 16,
+                    "y": 10
+                }
+            ],
             "triggers": [
                 {
                     "name": "",
@@ -4326,7 +4500,7 @@
             "imageHeight": 144,
             "filename": "Cellar-IntGrid.png",
             "inode": "12902221334",
-            "_v": 1618371956147
+            "_v": 1618378288703
         },
         {
             "id": "566f0acf-d599-4918-ad77-ee8a3d24133c",
@@ -4337,7 +4511,7 @@
             "imageHeight": 144,
             "filename": "Dungeon-Tiles.png",
             "inode": "12902221335",
-            "_v": 1618371956147
+            "_v": 1618378288703
         },
         {
             "id": "a506e269-bc93-4daf-92f1-2fe69535a179",
@@ -4348,7 +4522,7 @@
             "imageHeight": 176,
             "filename": "home.png",
             "inode": "12902000540",
-            "_v": 1618371956147
+            "_v": 1618378288703
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -4359,7 +4533,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "12901940137",
-            "_v": 1618371956147
+            "_v": 1618378288703
         }
     ],
     "spriteSheets": [
@@ -4370,7 +4544,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "12901940133",
-            "_v": 1618371956147
+            "_v": 1618378288703
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -4379,7 +4553,7 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "12901940132",
-            "_v": 1618371956147
+            "_v": 1618378288703
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -4388,7 +4562,7 @@
             "type": "static",
             "filename": "actor_static.png",
             "inode": "12901940129",
-            "_v": 1618371956147
+            "_v": 1618378288703
         },
         {
             "id": "6d701307-ad46-4a34-8838-77a45ff5a8d4",
@@ -4397,7 +4571,7 @@
             "type": "actor_animated",
             "filename": "character.png",
             "inode": "12901940130",
-            "_v": 1618371956147
+            "_v": 1618378288703
         },
         {
             "id": "9dea8d96-bc33-4149-b287-7eb0b3b67320",
@@ -4406,7 +4580,7 @@
             "type": "actor_animated",
             "filename": "character_generic.png",
             "inode": "12901949621",
-            "_v": 1618371956147
+            "_v": 1618378288703
         },
         {
             "id": "5aca03ba-331f-4b9c-bc32-9d593f5ee637",
@@ -4415,7 +4589,7 @@
             "type": "actor_animated",
             "filename": "dog.png",
             "inode": "12901965153",
-            "_v": 1618371956147
+            "_v": 1618378288703
         },
         {
             "id": "2669d0a8-7b4c-4667-8d3c-ccd09c44a047",
@@ -4424,7 +4598,7 @@
             "type": "animated",
             "filename": "plants.png",
             "inode": "12901973448",
-            "_v": 1618371956147
+            "_v": 1618378288703
         },
         {
             "id": "2990722c-6cda-4307-bdf0-981ff8450b6e",
@@ -4433,7 +4607,7 @@
             "type": "actor_animated",
             "filename": "princess.png",
             "inode": "12901964417",
-            "_v": 1618371956147
+            "_v": 1618378288703
         },
         {
             "id": "7f4d2116-94fa-4d9f-a3d6-85225071d984",
@@ -4442,7 +4616,7 @@
             "type": "actor_animated",
             "filename": "zelda_clone.png",
             "inode": "12901955872",
-            "_v": 1618371956147
+            "_v": 1618378288703
         }
     ],
     "palettes": [
@@ -4451,9 +4625,9 @@
             "name": "Default BG 1",
             "colors": [
                 "F0F0D8",
-                "C8D0D8",
-                "A8A0A0",
-                "807880"
+                "D8D8D8",
+                "A8A8A8",
+                "888088"
             ],
             "defaultName": "Default BG 1",
             "defaultColors": [
@@ -4591,6 +4765,46 @@
                 "A8A8A0",
                 "000000"
             ]
+        },
+        {
+            "id": "4f46dcde-5d68-4249-98fa-98a7affc3d09",
+            "name": "Green Liquid 1",
+            "colors": [
+                "E8F8A8",
+                "78D838",
+                "78D838",
+                "081000"
+            ]
+        },
+        {
+            "id": "5fa50abf-1a6c-4e95-9e8b-dc1f5f7906c2",
+            "name": "Green Liquid 2",
+            "colors": [
+                "E8F8A8",
+                "78D838",
+                "E8F8A8",
+                "081000"
+            ]
+        },
+        {
+            "id": "c882b276-7cdd-41e3-bc37-77073948236e",
+            "name": "Green Liquid 3",
+            "colors": [
+                "E8F8A8",
+                "E8F8A8",
+                "E8F8A8",
+                "081000"
+            ]
+        },
+        {
+            "id": "6d3d0ba9-bf18-47ae-8012-ab6b39f33fbd",
+            "name": "Green Liquid 4",
+            "colors": [
+                "E8F8A8",
+                "E8F8A8",
+                "78D838",
+                "081000"
+            ]
         }
     ],
     "customEvents": [],
@@ -4601,7 +4815,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "12901940135",
-            "_v": 1618371956142
+            "_v": 1618378288696
         }
     ],
     "variables": [
@@ -4662,9 +4876,9 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1149,
-        "worldScrollY": 410,
-        "zoom": 225.88775634765625,
+        "worldScrollX": 1616,
+        "worldScrollY": 759,
+        "zoom": 358.78143310546875,
         "customColorsEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
@@ -4672,7 +4886,7 @@
             "default-bg-2",
             "default-bg-3",
             "default-bg-4",
-            "default-bg-5",
+            "4f46dcde-5d68-4249-98fa-98a7affc3d09",
             "default-bg-6"
         ],
         "defaultSpritePaletteId": "default-sprite",
