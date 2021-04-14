@@ -2670,7 +2670,7 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "683f9ea6-5f82-4a11-8b74-bc4d5cd73d68",
-                                "x": 18,
+                                "x": 17,
                                 "y": 12,
                                 "direction": "left",
                                 "fadeSpeed": "1"
@@ -4296,8 +4296,8 @@
                             "id": "9f262fde-d611-40d6-9922-c9e82b0574ef",
                             "command": "EVENT_WAIT",
                             "args": {
-                                "time": 2,
-                                "__collapse": true
+                                "time": 1,
+                                "__collapse": false
                             }
                         },
                         {
@@ -4310,7 +4310,7 @@
                                 "palette3": "",
                                 "palette4": "",
                                 "palette5": "",
-                                "__collapse": false,
+                                "__collapse": true,
                                 "__label": "None",
                                 "__comment": false
                             }
@@ -4342,8 +4342,8 @@
                             "id": "70f60eb5-9edf-47ce-9490-403d1e1b3053",
                             "command": "EVENT_WAIT",
                             "args": {
-                                "time": 0.5,
-                                "__collapse": true
+                                "time": 0.2,
+                                "__collapse": false
                             }
                         },
                         {
@@ -4388,8 +4388,8 @@
                             "id": "10d8e5d0-6ef5-4e4c-8845-44eeb99b41d1",
                             "command": "EVENT_WAIT",
                             "args": {
-                                "time": 0.5,
-                                "__collapse": true
+                                "time": 0.7,
+                                "__collapse": false
                             }
                         },
                         {
@@ -4853,7 +4853,7 @@
         }
     ],
     "settings": {
-        "startSceneId": "683f9ea6-5f82-4a11-8b74-bc4d5cd73d68",
+        "startSceneId": "62b4828e-4f79-4a8d-b9bd-1bad90c041a5",
         "playerSpriteSheetId": "2990722c-6cda-4307-bdf0-981ff8450b6e",
         "startX": 4,
         "startY": 4,
@@ -4862,8 +4862,8 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 735,
-        "worldScrollY": 417,
+        "worldScrollX": 636,
+        "worldScrollY": 354,
         "zoom": 184.02130126953125,
         "customColorsEnabled": true,
         "customHead": "",
