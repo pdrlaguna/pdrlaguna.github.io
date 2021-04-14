@@ -1455,7 +1455,7 @@
                                                     "args": {
                                                         "sceneId": "683f9ea6-5f82-4a11-8b74-bc4d5cd73d68",
                                                         "x": 4,
-                                                        "y": 5,
+                                                        "y": 4,
                                                         "direction": "",
                                                         "fadeSpeed": "1"
                                                     }
@@ -4856,7 +4856,7 @@
         "startSceneId": "683f9ea6-5f82-4a11-8b74-bc4d5cd73d68",
         "playerSpriteSheetId": "2990722c-6cda-4307-bdf0-981ff8450b6e",
         "startX": 4,
-        "startY": 5,
+        "startY": 4,
         "startMoveSpeed": 1,
         "startAnimSpeed": 4,
         "startDirection": "left",
