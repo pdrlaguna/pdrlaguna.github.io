@@ -921,8 +921,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Well... skipping\nthe day doesn't\nreally do anything",
-                                    "You can just keep\nclicking and your\nplant your grow...",
+                                    "The dungeon holds\nsomes secrets...\n",
+                                    "But your days will\nnever pass.\n",
                                     "You can use your\nwardrobe to load\na saved gamed."
                                 ],
                                 "avatarId": ""
@@ -1455,7 +1455,7 @@
                                                     "args": {
                                                         "sceneId": "683f9ea6-5f82-4a11-8b74-bc4d5cd73d68",
                                                         "x": 4,
-                                                        "y": 4,
+                                                        "y": 5,
                                                         "direction": "",
                                                         "fadeSpeed": "1"
                                                     }
@@ -1901,51 +1901,11 @@
                             "id": "8f09eb22-f5c6-4fcc-a45c-4ee6bbecdfa7",
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "sceneId": "683f9ea6-5f82-4a11-8b74-bc4d5cd73d68",
-                                "x": 4,
-                                "y": 4,
+                                "sceneId": "62b4828e-4f79-4a8d-b9bd-1bad90c041a5",
+                                "x": 39,
+                                "y": 14,
                                 "direction": "left",
-                                "fadeSpeed": "1"
-                            }
-                        },
-                        {
-                            "id": "c7ade965-5005-42ab-adb7-29fb52970f69",
-                            "command": "EVENT_CHOICE",
-                            "args": {
-                                "variable": "L0",
-                                "trueText": "Skip the day...",
-                                "falseText": "Go back",
-                                "__collapse": false
-                            }
-                        },
-                        {
-                            "id": "593c6727-6a41-41fb-8083-5857d1525927",
-                            "command": "EVENT_IF_TRUE",
-                            "args": {
-                                "variable": "L0",
-                                "__collapseElse": false,
-                                "__collapse": false
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "103641c5-83f2-4f9d-875e-fb10585d0457",
-                                        "command": "EVENT_INC_VALUE",
-                                        "args": {
-                                            "variable": "0"
-                                        }
-                                    },
-                                    {
-                                        "id": "8594260a-04d7-477d-a16c-e113eba06324",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "false": [
-                                    {
-                                        "id": "74eb1348-ac15-4219-90e0-b4912dc81b29",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
+                                "fadeSpeed": "2"
                             }
                         },
                         {
@@ -3266,12 +3226,12 @@
                 15,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
                 0,
                 0,
                 15,
@@ -3308,13 +3268,13 @@
                 15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 0,
                 0,
-                0,
-                0,
-                0,
+                15,
+                15,
                 0,
                 15,
                 0,
@@ -3350,7 +3310,7 @@
                 15,
                 0,
                 0,
-                0,
+                15,
                 0,
                 0,
                 0,
@@ -3392,7 +3352,7 @@
                 15,
                 0,
                 0,
-                0,
+                15,
                 0,
                 0,
                 0,
@@ -3434,13 +3394,13 @@
                 15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 0,
                 0,
-                0,
-                0,
-                0,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -3476,12 +3436,12 @@
                 15,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -4298,15 +4258,15 @@
             "y": 241,
             "actors": [
                 {
-                    "name": "",
-                    "frame": 0,
+                    "name": "liquid manager",
+                    "frame": 2,
                     "animate": false,
                     "spriteSheetId": "2669d0a8-7b4c-4667-8d3c-ccd09c44a047",
                     "spriteType": "static",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 3,
-                    "paletteId": "",
+                    "paletteId": "default-bg-3",
                     "isPinned": false,
                     "collisionGroup": "",
                     "script": [],
@@ -4350,7 +4310,7 @@
                                 "palette3": "",
                                 "palette4": "",
                                 "palette5": "",
-                                "__collapse": true,
+                                "__collapse": false,
                                 "__label": "None",
                                 "__comment": false
                             }
@@ -4456,8 +4416,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "3afc5e39-380f-472a-a0f5-f21d8205e71c",
-                    "x": 16,
-                    "y": 10
+                    "x": 4,
+                    "y": 15
                 }
             ],
             "triggers": [
@@ -4485,6 +4445,32 @@
                     "x": 22,
                     "y": 14,
                     "width": 2,
+                    "height": 2
+                },
+                {
+                    "name": "",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "4a8d09f2-d7e8-4fa5-aadf-ceb8f0b7d12f",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "683f9ea6-5f82-4a11-8b74-bc4d5cd73d68",
+                                "x": 9,
+                                "y": 20,
+                                "direction": "up",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "dd2c7798-98c7-42f7-ac23-f04606cd6809",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "c69ae0e4-1fdb-4361-bd03-b96eb52ef4e9",
+                    "x": 41,
+                    "y": 13,
+                    "width": 1,
                     "height": 2
                 }
             ]
@@ -4870,15 +4856,15 @@
         "startSceneId": "683f9ea6-5f82-4a11-8b74-bc4d5cd73d68",
         "playerSpriteSheetId": "2990722c-6cda-4307-bdf0-981ff8450b6e",
         "startX": 4,
-        "startY": 4,
+        "startY": 5,
         "startMoveSpeed": 1,
         "startAnimSpeed": 4,
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1616,
-        "worldScrollY": 759,
-        "zoom": 358.78143310546875,
+        "worldScrollX": 735,
+        "worldScrollY": 417,
+        "zoom": 184.02130126953125,
         "customColorsEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [

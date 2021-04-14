@@ -921,8 +921,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Well... skipping\nthe day doesn't\nreally do anything",
-                                    "You can just keep\nclicking and your\nplant your grow...",
+                                    "The dungeon holds\nsomes secrets...\n",
+                                    "But your days will\nnever pass.\n",
                                     "You can use your\nwardrobe to load\na saved gamed."
                                 ],
                                 "avatarId": ""
@@ -4298,15 +4298,15 @@
             "y": 241,
             "actors": [
                 {
-                    "name": "",
-                    "frame": 0,
+                    "name": "liquid manager",
+                    "frame": 2,
                     "animate": false,
                     "spriteSheetId": "2669d0a8-7b4c-4667-8d3c-ccd09c44a047",
                     "spriteType": "static",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 3,
-                    "paletteId": "",
+                    "paletteId": "default-bg-3",
                     "isPinned": false,
                     "collisionGroup": "",
                     "script": [],
@@ -4350,7 +4350,7 @@
                                 "palette3": "",
                                 "palette4": "",
                                 "palette5": "",
-                                "__collapse": true,
+                                "__collapse": false,
                                 "__label": "None",
                                 "__comment": false
                             }
@@ -4456,8 +4456,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "3afc5e39-380f-472a-a0f5-f21d8205e71c",
-                    "x": 16,
-                    "y": 10
+                    "x": 4,
+                    "y": 15
                 }
             ],
             "triggers": [
@@ -4500,7 +4500,7 @@
             "imageHeight": 144,
             "filename": "Cellar-IntGrid.png",
             "inode": "12902221334",
-            "_v": 1618377638338
+            "_v": 1618378288703
         },
         {
             "id": "566f0acf-d599-4918-ad77-ee8a3d24133c",
@@ -4511,7 +4511,7 @@
             "imageHeight": 144,
             "filename": "Dungeon-Tiles.png",
             "inode": "12902221335",
-            "_v": 1618377638338
+            "_v": 1618378288703
         },
         {
             "id": "a506e269-bc93-4daf-92f1-2fe69535a179",
@@ -4522,7 +4522,7 @@
             "imageHeight": 176,
             "filename": "home.png",
             "inode": "12902000540",
-            "_v": 1618377638339
+            "_v": 1618378288703
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -4533,7 +4533,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "12901940137",
-            "_v": 1618377638339
+            "_v": 1618378288703
         }
     ],
     "spriteSheets": [
@@ -4544,7 +4544,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "12901940133",
-            "_v": 1618377638339
+            "_v": 1618378288703
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -4553,7 +4553,7 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "12901940132",
-            "_v": 1618377638339
+            "_v": 1618378288703
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -4562,7 +4562,7 @@
             "type": "static",
             "filename": "actor_static.png",
             "inode": "12901940129",
-            "_v": 1618377638339
+            "_v": 1618378288703
         },
         {
             "id": "6d701307-ad46-4a34-8838-77a45ff5a8d4",
@@ -4571,7 +4571,7 @@
             "type": "actor_animated",
             "filename": "character.png",
             "inode": "12901940130",
-            "_v": 1618377638339
+            "_v": 1618378288703
         },
         {
             "id": "9dea8d96-bc33-4149-b287-7eb0b3b67320",
@@ -4580,7 +4580,7 @@
             "type": "actor_animated",
             "filename": "character_generic.png",
             "inode": "12901949621",
-            "_v": 1618377638339
+            "_v": 1618378288703
         },
         {
             "id": "5aca03ba-331f-4b9c-bc32-9d593f5ee637",
@@ -4589,7 +4589,7 @@
             "type": "actor_animated",
             "filename": "dog.png",
             "inode": "12901965153",
-            "_v": 1618377638339
+            "_v": 1618378288703
         },
         {
             "id": "2669d0a8-7b4c-4667-8d3c-ccd09c44a047",
@@ -4598,7 +4598,7 @@
             "type": "animated",
             "filename": "plants.png",
             "inode": "12901973448",
-            "_v": 1618377638339
+            "_v": 1618378288703
         },
         {
             "id": "2990722c-6cda-4307-bdf0-981ff8450b6e",
@@ -4607,7 +4607,7 @@
             "type": "actor_animated",
             "filename": "princess.png",
             "inode": "12901964417",
-            "_v": 1618377638339
+            "_v": 1618378288703
         },
         {
             "id": "7f4d2116-94fa-4d9f-a3d6-85225071d984",
@@ -4616,7 +4616,7 @@
             "type": "actor_animated",
             "filename": "zelda_clone.png",
             "inode": "12901955872",
-            "_v": 1618377638339
+            "_v": 1618378288703
         }
     ],
     "palettes": [
@@ -4815,7 +4815,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "12901940135",
-            "_v": 1618377638334
+            "_v": 1618378288696
         }
     ],
     "variables": [
@@ -4867,7 +4867,7 @@
         }
     ],
     "settings": {
-        "startSceneId": "62b4828e-4f79-4a8d-b9bd-1bad90c041a5",
+        "startSceneId": "683f9ea6-5f82-4a11-8b74-bc4d5cd73d68",
         "playerSpriteSheetId": "2990722c-6cda-4307-bdf0-981ff8450b6e",
         "startX": 4,
         "startY": 4,
@@ -4876,8 +4876,8 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1616,
-        "worldScrollY": 759,
+        "worldScrollX": 1212,
+        "worldScrollY": 1377,
         "zoom": 358.78143310546875,
         "customColorsEnabled": true,
         "customHead": "",
