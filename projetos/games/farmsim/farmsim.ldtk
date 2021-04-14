@@ -24,7 +24,7 @@
 	"externalLevels": true,
 	"exportTiled": false,
 	"exportPng": true,
-	"pngFilePattern": null,
+	"pngFilePattern": "%level_name-%layer_name",
 	"backupOnSave": false,
 	"backupLimit": 10,
 	"flags": [],
@@ -59,7 +59,11 @@
 			"pxOffsetY": 0,
 			"requiredTags": [],
 			"excludedTags": [],
-			"intGridValues": [ { "value": 1, "identifier": "background", "color": "#000000" }, { "value": 2, "identifier": "rooms", "color": "#F4F3EB" } ],
+			"intGridValues": [
+				{ "value": 1, "identifier": "background", "color": "#000000" },
+				{ "value": 2, "identifier": "rooms", "color": "#F4F3EB" },
+				{ "value": 3, "identifier": "grass", "color": "#397305" }
+			],
 			"autoTilesetDefUid": 2,
 			"autoRuleGroups": [
 				{
@@ -95,7 +99,7 @@
 					"uid": 60,
 					"name": "room",
 					"active": true,
-					"collapsed": false,
+					"collapsed": true,
 					"rules": [
 						{
 							"uid": 64,
@@ -409,8 +413,8 @@
 			"padding": 0,
 			"savedSelections": [],
 			"cachedPixelData": {
-				"opaqueTiles": "011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000",
-				"averageColors": "0000f000f898f8a8f8a8f798fdeef9c8f9c8fabafaaaf465f364fbcbfdedfcdbf9c9f9b8f9c9f9c9f9b8f9c9fffffefefefef796f786feeefeeefdddf9a9fdddf9b8f8b6f9b8f9b8f8b6f9b8f7b6f9c9f9c9f7a6fffffefefefefbcbfdedfbcbf9c9f9b8f9c9f9c9f9b8f9c9f7b6f9c9f9c9f7a6fbcbfefefefefcdcfeeefddcf9c7f9c7f9c7f9c7f676f8a7fefefbdafbdbfac9fefefefefefefdedfffffdedf9c7f9c7f9c7f9c7f676f8a7fbbbfbbbfbbbfbbbf899f899f585fcdcfdedfcdcf576f576f576f576f99afbbafbcbfbcbfbbbfbbbfabbfabbf9a9f9a9f797f797f9b8f9b8f9b8f9b8f687f475f687f8a7f8b7f8a7fabbfabbf8a9f8a9f898f898fac9fac9fac9fac9f565f465f565f796f7a6f796f9a9f9a9f899f8b8f9b9f8b8f9c9f9c9fac9f9c9f797f8b6f797fbbbfabafcccfabbfabbf899f797f899f797f8b8f8b8f8b6f898f685f7a5f685f899fdedfabbf9a9f788f7a7f687f899f687fabafabafabafabaf898f676f898fbbbfabafcccf9a9f788fbcbf9aaf8b6f9aafabbfabbfabbfabbf9b9f8a7f475fabaf9a9f9a9f888f585f354f687f899f687fabafabafabafabafab9f8a7f787fabafdedfdedf899fabaf222f474f585f474f9aaf999f9aaf999f465f465f465f465f365f465f9a9f365f8b6f675f475f475f7a6f796f8a7f686f575f786f676f9a8f9a8f8a8f8a8f475f475f676f575f575f585f475f7a6f696f575f797f686f9a8f8a8f9a8f9a8f232f475f897f475f475f7a6f796f8a7f796f796f685f7a6f8a7f796f8a7f8a7f122f475f122f123f133f475f688f464f464f475f475f898f8a7f796f796f796f344f667f012f254f133f797f797f797f797f9b9f9b8f9b9f779f668f779f658f658f555f565f565f565f8a8f8a8f8a8f8a8f9b8f8b6f9b8f668f557f668f557f657f555f565f565f565f797f797f797f797f9b9f9b8f9b9f779f668f778f324f324f324f324f565f565f796f796f796f796f777f899f898f677f898fabafbcafab9f685f685f685f685fbcbfabaf7a7f7a7f899f9a9f999f788f9a9facafbdbfcdbf685f685f685f685fbcafbcaf8b7f8a6f676f687f687f566f676f8a7f9b8f8b8f557f99af89af99af9bafcdbfab9f8b6f687f787f798f678f787f8a7f8b7f8b7f557f99af585f9abf686f576f889f779f9a9fabaf668f668f668f668f668f446f778faabf88afaabf676f566f899f779f898f888f446f446f446f446f446f445f8b6f8b6f8b6f8b6f8b6f8b6f8b6f8b6f8b6f8b6f8b6f8b6f000f000f000f000f000f000f324f324f324f324f324f324f557f557ffffffffffffffffffffffff0000000000000000"
+				"opaqueTiles": "011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111011111111110000",
+				"averageColors": "0000f000f898f8a8f8a8f798fdeef9c8f9c8fabafaaaf465f364fbcbfdedfcdbf9c9f9b8f9c9f9c9f9b8f9c9fffffefefefef796f786feeefeeefdddf9a9fdddf9b8f8b6f9b8f9b8f8b6f9b8f7b6f9c9f9c9f7a6fffffefefefefbcbfdedfbcbf9c9f9b8f9c9f9c9f9b8f9c9f7b6f9c9f9c9f7a6fbcbfefefefefcdcfeeefddcf9c7f9c7f9c7f9c7f676f8a7fefefbdafbdbfac9fefefefefefefdedfffffdedf9c7f9c7f9c7f9c7f676f8a7fbbbfbbbfbbbfbbbf899f899f585fcdcfdedfcdcf576f576f576f576f99afbbafbcbfbcbfbbbfbbbfabbfabbf9a9f9a9f797f797f9b8f9b8f9b8f9b8f687f475f687f8a7f8b7f8a7fabbfabbf8a9f8a9f898f898fac9fac9fac9fac9f565f465f565f796f7a6f796f9a9f9a9f899f8b8f9b9f8b8f9c9f9c9fac9f9c9f797f8b6f797fbbbfabafcccfabbfabbf899f797f899f797f8b8f8b8f8b6f898f685f7a5f685f899fdedfabbf9a9f788f7a7f687f899f687fabafabafabafabaf898f676f898fbbbfabafcccf9a9f788fbcbf9aaf8b6f9aafabbfabbfabbfabbf9b9f8a7f475fabaf9a9f9a9f888f585f354f687f899f687fabafabafabafabafab9f8a7f787fabafdedfdedf899fabaf222f474f585f474f9aaf999f9aaf999f465f465f465f465f365f465f9a9f365f8b6f675f475f475f7a6f796f8a7f686f575f786f676f9a8f9a8f8a8f8a8f475f475f676f575f575f585f475f7a6f696f575f797f686f9a8f8a8f9a8f9a8f232f475f897f475f475f7a6f796f8a7f796f796f685f7a6f8a7f796f8a7f8a7f122f475f122f123f133f475f688f464f464f475f475f898f8a7f796f796f796f344f667f012f254f133f797f797f797f797f9b9f9b8f9b9f779f668f779f658f658f555f565f565f565f8a8f8a8f8a8f8a8f9b8f8b6f9b8f668f557f668f557f657f555f565f565f565f797f797f797f797f9b9f9b8f9b9f779f668f778f324f324f324f324f565f565f796f796f796f796f777f899f898f677f898fabafbcafab9f685f685f685f685fbcbfabaf7a7f7a7f899f9a9f999f788f9a9facafbdbfcdbf685f685f685f685fbcafbcaf8b7f8a6f676f687f687f566f676f8a7f9b8f8b8f557f99af89af99af9bafcdbfab9f8b6f687f787f798f678f787f8a7f8b7f8b7f557f99af585f9abf686f576f889f779f9a9fabaf668f668f668f668f668f446f778faabf88afaabf676f566f899f779f898f888f446f446f446f446f446f445f8b6f8b6f8b6f8b6fabafbcbf9a9f9a8f475f475f797f797f000f000f000f000f000f000f324f324f324ededf475f475f475f475f364f465ffffffffffffffff0000000000000000"
 			}
 		}
 	], "enums": [], "externalEnums": [], "levelFields": [] },
@@ -429,7 +433,7 @@
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
 			"__bgPos": null,
-			"externalRelPath": "home/0000-Room.ldtkl",
+			"externalRelPath": "farmsim/0000-Room.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [ { "levelUid": 4, "dir": "e" }, { "levelUid": 80, "dir": "n" }, { "levelUid": 81, "dir": "s" } ]
@@ -440,25 +444,6 @@
 			"worldX": 224,
 			"worldY": 48,
 			"pxWid": 160,
-			"pxHei": 128,
-			"__bgColor": "#696A79",
-			"bgColor": null,
-			"bgRelPath": null,
-			"bgPos": null,
-			"bgPivotX": 0.5,
-			"bgPivotY": 0.5,
-			"__bgPos": null,
-			"externalRelPath": "home/0001-Cellar.ldtkl",
-			"fieldInstances": [],
-			"layerInstances": null,
-			"__neighbours": [ { "levelUid": 0, "dir": "w" }, { "levelUid": 80, "dir": "n" } ]
-		},
-		{
-			"identifier": "Dungeon",
-			"uid": 80,
-			"worldX": 176,
-			"worldY": -96,
-			"pxWid": 208,
 			"pxHei": 144,
 			"__bgColor": "#696A79",
 			"bgColor": null,
@@ -467,18 +452,18 @@
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
 			"__bgPos": null,
-			"externalRelPath": "home/0002-Dungeon.ldtkl",
+			"externalRelPath": "farmsim/0001-Cellar.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
-			"__neighbours": [ { "levelUid": 0, "dir": "s" }, { "levelUid": 4, "dir": "s" } ]
+			"__neighbours": [ { "levelUid": 0, "dir": "w" }, { "levelUid": 80, "dir": "n" } ]
 		},
 		{
-			"identifier": "Garden",
-			"uid": 81,
-			"worldX": -64,
-			"worldY": 224,
-			"pxWid": 352,
-			"pxHei": 304,
+			"identifier": "Dungeon",
+			"uid": 80,
+			"worldX": 160,
+			"worldY": -96,
+			"pxWid": 336,
+			"pxHei": 144,
 			"__bgColor": "#696A79",
 			"bgColor": null,
 			"bgRelPath": null,
@@ -486,7 +471,26 @@
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
 			"__bgPos": null,
-			"externalRelPath": "home/0003-Garden.ldtkl",
+			"externalRelPath": "farmsim/0002-Dungeon.ldtkl",
+			"fieldInstances": [],
+			"layerInstances": null,
+			"__neighbours": [ { "levelUid": 0, "dir": "s" }, { "levelUid": 4, "dir": "s" } ]
+		},
+		{
+			"identifier": "Garden",
+			"uid": 81,
+			"worldX": -352,
+			"worldY": 224,
+			"pxWid": 640,
+			"pxHei": 448,
+			"__bgColor": "#696A79",
+			"bgColor": null,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__bgPos": null,
+			"externalRelPath": "farmsim/0003-Garden.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [{ "levelUid": 0, "dir": "n" }]
