@@ -1136,7 +1136,7 @@
                     "y": 16
                 },
                 {
-                    "name": "",
+                    "name": "lock",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "efa90b24-cb39-42d3-91bc-0512df0fa6bd",
@@ -18334,8 +18334,8 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 459,
-        "worldScrollY": 715,
+        "worldScrollX": 311,
+        "worldScrollY": 437,
         "zoom": 161.7669677734375,
         "customColorsEnabled": true,
         "customHead": "",
