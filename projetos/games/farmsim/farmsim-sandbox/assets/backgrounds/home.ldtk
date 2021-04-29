@@ -23,8 +23,8 @@
 	"minifyJson": false,
 	"externalLevels": true,
 	"exportTiled": false,
-	"imageExportMode": "OneImagePerLayer",
-	"pngFilePattern": "%level_name-%layer_name",
+	"imageExportMode": "OneImagePerLevel",
+	"pngFilePattern": null,
 	"backupOnSave": false,
 	"backupLimit": 10,
 	"levelNamePattern": "Level_%idx",
@@ -410,7 +410,7 @@
 			"__cHei": 38,
 			"identifier": "City_outdoor",
 			"uid": 2,
-			"relPath": "tileset.png",
+			"relPath": "../../../tileset.png",
 			"pxWid": 272,
 			"pxHei": 608,
 			"tileGridSize": 16,
@@ -442,7 +442,7 @@
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
 			"__bgPos": null,
-			"externalRelPath": "farmsim/0000-Room.ldtkl",
+			"externalRelPath": "home/0000-Room.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [ { "levelUid": 4, "dir": "e" }, { "levelUid": 80, "dir": "n" }, { "levelUid": 81, "dir": "s" }, { "levelUid": 82, "dir": "n" } ]
@@ -462,7 +462,7 @@
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
 			"__bgPos": null,
-			"externalRelPath": "farmsim/0001-Room_before.ldtkl",
+			"externalRelPath": "home/0001-Room_before.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [ { "levelUid": 81, "dir": "s" }, { "levelUid": 82, "dir": "n" } ]
@@ -482,7 +482,7 @@
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
 			"__bgPos": null,
-			"externalRelPath": "farmsim/0002-Cellar.ldtkl",
+			"externalRelPath": "home/0002-Cellar.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [ { "levelUid": 0, "dir": "w" }, { "levelUid": 80, "dir": "n" } ]
@@ -502,7 +502,7 @@
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
 			"__bgPos": null,
-			"externalRelPath": "farmsim/0003-Dungeon.ldtkl",
+			"externalRelPath": "home/0003-Dungeon.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [ { "levelUid": 0, "dir": "s" }, { "levelUid": 4, "dir": "s" }, { "levelUid": 82, "dir": "w" } ]
@@ -522,7 +522,7 @@
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
 			"__bgPos": null,
-			"externalRelPath": "farmsim/0004-Garden.ldtkl",
+			"externalRelPath": "home/0004-Garden.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [ { "levelUid": 0, "dir": "n" }, { "levelUid": 83, "dir": "n" } ]
@@ -542,7 +542,7 @@
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
 			"__bgPos": null,
-			"externalRelPath": "farmsim/0005-NewPotion.ldtkl",
+			"externalRelPath": "home/0005-NewPotion.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [ { "levelUid": 0, "dir": "s" }, { "levelUid": 83, "dir": "s" }, { "levelUid": 80, "dir": "e" } ]
