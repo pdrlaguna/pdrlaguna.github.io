@@ -12987,7 +12987,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "It's dangerouns to\ngo alone.\n",
+                                    "It's dangerous \nto go alone.\n",
                                     "There are evil\ncreatures hidden\nin the woods."
                                 ],
                                 "avatarId": "",
@@ -13042,7 +13042,7 @@
                             "id": "7d5e7e0b-8cb5-4aff-82fa-db821d4b24a3",
                             "command": "EVENT_WAIT",
                             "args": {
-                                "time": 0.3
+                                "time": 0.5
                             }
                         },
                         {
@@ -16760,7 +16760,7 @@
             "imageHeight": 176,
             "filename": "0000-Room.png",
             "inode": "12903053234",
-            "_v": 1619661678752
+            "_v": 1619786310294
         },
         {
             "id": "63ba6a7c-b5a2-4f18-9061-3393350305ea",
@@ -16771,7 +16771,7 @@
             "imageHeight": 200,
             "filename": "0000-Town.png",
             "inode": "12903051430",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "ecd340ad-5d49-484f-8cad-be547cef385b",
@@ -16782,7 +16782,7 @@
             "imageHeight": 144,
             "filename": "0001-Generic_house.png",
             "inode": "12903046534",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "7b6dda9c-0069-4cdd-8078-69c28d0bf56b",
@@ -16793,7 +16793,7 @@
             "imageHeight": 176,
             "filename": "0001-Room_before.png",
             "inode": "12903053235",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "4d1c6c15-4f23-444c-af1d-f95a985e57fa",
@@ -16804,7 +16804,7 @@
             "imageHeight": 144,
             "filename": "0002-Cellar.png",
             "inode": "12903053236",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "3560f177-6b21-4688-a032-a420168eadba",
@@ -16815,7 +16815,7 @@
             "imageHeight": 144,
             "filename": "0003-Dungeon.png",
             "inode": "12903053237",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "177a245e-7cb3-431f-ab62-d71d4f119978",
@@ -16826,7 +16826,7 @@
             "imageHeight": 368,
             "filename": "0004-Garden.png",
             "inode": "12903053238",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "225f64d0-1f20-4a65-841f-a03af992876e",
@@ -16837,7 +16837,7 @@
             "imageHeight": 144,
             "filename": "0005-NewPotion.png",
             "inode": "12903053239",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "78386267-0cb1-44d8-a084-9a0ae96bad12",
@@ -16848,7 +16848,7 @@
             "imageHeight": 144,
             "filename": "Cellar-IntGrid.png",
             "inode": "12902221334",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "566f0acf-d599-4918-ad77-ee8a3d24133c",
@@ -16859,7 +16859,7 @@
             "imageHeight": 144,
             "filename": "Dungeon-Tiles.png",
             "inode": "12902221335",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "c963ce4d-9d37-417e-b822-ff5430afc099",
@@ -16870,7 +16870,7 @@
             "imageHeight": 144,
             "filename": "Frame 4.png",
             "inode": "12902300910",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "45ac6acb-fb81-44a1-8d99-665ce89102b3",
@@ -16881,7 +16881,7 @@
             "imageHeight": 144,
             "filename": "HERBS_SELECT.png",
             "inode": "12902448899",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "b7f42a8c-fab0-4a27-afa1-db984ddc9371",
@@ -16892,7 +16892,7 @@
             "imageHeight": 144,
             "filename": "MUSHROOMS_SELECT.png",
             "inode": "12902448900",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "15d6bfe7-3018-43f2-98dc-23b7e7406146",
@@ -16903,7 +16903,7 @@
             "imageHeight": 144,
             "filename": "NewPotion-Tiles.png",
             "inode": "12902480881",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "8f7edf1f-349c-4392-a697-1c590d3fbb91",
@@ -16914,7 +16914,7 @@
             "imageHeight": 144,
             "filename": "OPTIONS 1px rectangles.png",
             "inode": "12902488153",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "a99a5693-3fee-4a74-99d2-4bf1a26b17bf",
@@ -16925,7 +16925,7 @@
             "imageHeight": 144,
             "filename": "OPTIONS.png",
             "inode": "12902478511",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "7787a28e-f7d2-4e1e-bd18-d8b2b0c5027c",
@@ -16936,7 +16936,7 @@
             "imageHeight": 200,
             "filename": "Sem Título/png/0000-Level_0.png",
             "inode": "12903046144",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "a506e269-bc93-4daf-92f1-2fe69535a179",
@@ -16947,7 +16947,73 @@
             "imageHeight": 176,
             "filename": "home.png",
             "inode": "12902000540",
-            "_v": 1619661678752
+            "_v": 1619786310295
+        },
+        {
+            "id": "df006cd7-cb6f-479c-ace2-503b24907aa6",
+            "name": "home/0000-Room.png",
+            "width": 20,
+            "height": 22,
+            "imageWidth": 160,
+            "imageHeight": 176,
+            "filename": "home/png/0000-Room.png",
+            "inode": "12903067026",
+            "_v": 1619786310295
+        },
+        {
+            "id": "cad579bc-f3b6-4414-bb9b-8c6da4e1c3c2",
+            "name": "home/0001-Room_before.png",
+            "width": 20,
+            "height": 22,
+            "imageWidth": 160,
+            "imageHeight": 176,
+            "filename": "home/png/0001-Room_before.png",
+            "inode": "12903067028",
+            "_v": 1619786310295
+        },
+        {
+            "id": "c2e37742-dbf7-4390-9dde-f259f35e5529",
+            "name": "home/0002-Cellar.png",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "home/png/0002-Cellar.png",
+            "inode": "12903067029",
+            "_v": 1619786310295
+        },
+        {
+            "id": "ab98fa7f-f957-4f4c-8e98-7e2a1aebde9c",
+            "name": "home/0003-Dungeon.png",
+            "width": 42,
+            "height": 18,
+            "imageWidth": 336,
+            "imageHeight": 144,
+            "filename": "home/png/0003-Dungeon.png",
+            "inode": "12903067030",
+            "_v": 1619786310295
+        },
+        {
+            "id": "88cb28aa-aa67-4876-aa17-861d364ca466",
+            "name": "home/0004-Garden.png",
+            "width": 80,
+            "height": 46,
+            "imageWidth": 640,
+            "imageHeight": 368,
+            "filename": "home/png/0004-Garden.png",
+            "inode": "12903067031",
+            "_v": 1619786310295
+        },
+        {
+            "id": "b060b15d-2a74-4d35-810a-0cedc0d2d34d",
+            "name": "home/0005-NewPotion.png",
+            "width": 24,
+            "height": 18,
+            "imageWidth": 192,
+            "imageHeight": 144,
+            "filename": "home/png/0005-NewPotion.png",
+            "inode": "12903067032",
+            "_v": 1619786310295
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -16958,7 +17024,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "12901940137",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "027c1f84-6147-4d63-911a-401e50abb3d0",
@@ -16969,7 +17035,7 @@
             "imageHeight": 400,
             "filename": "tilemap.png",
             "inode": "12903045818",
-            "_v": 1619661678752
+            "_v": 1619786310295
         },
         {
             "id": "0d9919df-2eee-472e-a3cc-0012a846c2d4",
@@ -16980,7 +17046,7 @@
             "imageHeight": 400,
             "filename": "town.png",
             "inode": "12903046069",
-            "_v": 1619661678753
+            "_v": 1619786310295
         },
         {
             "id": "1afd2da1-c169-4743-8d47-263763ae0a69",
@@ -16991,7 +17057,7 @@
             "imageHeight": 200,
             "filename": "town/png/0000-Town.png",
             "inode": "12903052721",
-            "_v": 1619661678753
+            "_v": 1619786310295
         },
         {
             "id": "d90b50ea-2b9c-45a2-826c-1f143f73f892",
@@ -17002,7 +17068,7 @@
             "imageHeight": 144,
             "filename": "town/png/0001-Generic_house.png",
             "inode": "12903052722",
-            "_v": 1619661678753
+            "_v": 1619786310295
         },
         {
             "id": "fc697a3c-6c58-42bc-ad86-dcd82d47d124",
@@ -17013,7 +17079,7 @@
             "imageHeight": 256,
             "filename": "town/png/0002-Forest.png",
             "inode": "12903052723",
-            "_v": 1619661678753
+            "_v": 1619786310295
         }
     ],
     "spriteSheets": [
@@ -17024,7 +17090,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "12901940133",
-            "_v": 1619661678745
+            "_v": 1619786310289
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -17033,7 +17099,7 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "12901940132",
-            "_v": 1619661678745
+            "_v": 1619786310289
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -17042,7 +17108,7 @@
             "type": "static",
             "filename": "actor_static.png",
             "inode": "12901940129",
-            "_v": 1619661678745
+            "_v": 1619786310289
         },
         {
             "id": "6d701307-ad46-4a34-8838-77a45ff5a8d4",
@@ -17051,7 +17117,7 @@
             "type": "actor_animated",
             "filename": "character.png",
             "inode": "12901940130",
-            "_v": 1619661678745
+            "_v": 1619786310289
         },
         {
             "id": "9dea8d96-bc33-4149-b287-7eb0b3b67320",
@@ -17060,7 +17126,7 @@
             "type": "actor_animated",
             "filename": "character_generic.png",
             "inode": "12901949621",
-            "_v": 1619661678745
+            "_v": 1619786310289
         },
         {
             "id": "efa90b24-cb39-42d3-91bc-0512df0fa6bd",
@@ -17069,7 +17135,7 @@
             "type": "static",
             "filename": "cursor_forbidden.png",
             "inode": "12902461853",
-            "_v": 1619661678745
+            "_v": 1619786310289
         },
         {
             "id": "e53537cb-a49e-4eee-a6af-c28df7848703",
@@ -17078,7 +17144,7 @@
             "type": "static",
             "filename": "cursor_single.png",
             "inode": "12902335697",
-            "_v": 1619661678746
+            "_v": 1619786310289
         },
         {
             "id": "5aca03ba-331f-4b9c-bc32-9d593f5ee637",
@@ -17087,7 +17153,7 @@
             "type": "actor_animated",
             "filename": "dog.png",
             "inode": "12901965153",
-            "_v": 1619661678745
+            "_v": 1619786310289
         },
         {
             "id": "41c50ea1-6339-45cc-a092-6f1ac5342a9c",
@@ -17096,7 +17162,7 @@
             "type": "animated",
             "filename": "dynamic_cursor.png",
             "inode": "12902335705",
-            "_v": 1619661678746
+            "_v": 1619786310289
         },
         {
             "id": "3cc37d6e-c473-4f41-a243-d98efc97020c",
@@ -17105,16 +17171,16 @@
             "type": "animated",
             "filename": "large_cursor.png",
             "inode": "12902446409",
-            "_v": 1619661678746
+            "_v": 1619786310289
         },
         {
             "id": "2669d0a8-7b4c-4667-8d3c-ccd09c44a047",
             "name": "plants",
-            "numFrames": 5,
+            "numFrames": 9,
             "type": "animated",
             "filename": "plants.png",
             "inode": "12901973448",
-            "_v": 1619661678746
+            "_v": 1619786310289
         },
         {
             "id": "2990722c-6cda-4307-bdf0-981ff8450b6e",
@@ -17123,7 +17189,7 @@
             "type": "actor_animated",
             "filename": "princess.png",
             "inode": "12901964417",
-            "_v": 1619661678746
+            "_v": 1619786310289
         },
         {
             "id": "26d36ce4-827e-4676-a648-c7ba1296cf59",
@@ -17132,7 +17198,7 @@
             "type": "animated",
             "filename": "ui_counter_0to12.png",
             "inode": "12902450802",
-            "_v": 1619661678746
+            "_v": 1619786310289
         },
         {
             "id": "997fee65-93e2-44e5-b36f-c7434cb278b7",
@@ -17141,7 +17207,7 @@
             "type": "animated",
             "filename": "ui_counter_1to16.png",
             "inode": "12902470436",
-            "_v": 1619661678746
+            "_v": 1619786310289
         },
         {
             "id": "74597eb8-373b-48ae-8932-86bdef79389d",
@@ -17150,7 +17216,7 @@
             "type": "actor_animated",
             "filename": "ui_selector_0to5.png",
             "inode": "12902447624",
-            "_v": 1619661678746
+            "_v": 1619786310289
         },
         {
             "id": "d433d1fa-0187-4692-a831-04fc45567d26",
@@ -17159,7 +17225,7 @@
             "type": "animated",
             "filename": "ui_selector_1to5.png",
             "inode": "12902470754",
-            "_v": 1619661678746
+            "_v": 1619786310289
         },
         {
             "id": "7f4d2116-94fa-4d9f-a3d6-85225071d984",
@@ -17168,7 +17234,7 @@
             "type": "actor_animated",
             "filename": "zelda_clone.png",
             "inode": "12901955872",
-            "_v": 1619661678746
+            "_v": 1619786310289
         }
     ],
     "palettes": [
@@ -18220,7 +18286,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "12901940135",
-            "_v": 1619661678728
+            "_v": 1619786310248
         }
     ],
     "variables": [
@@ -18309,6 +18375,10 @@
             "name": "ui_options.state"
         },
         {
+            "id": "21",
+            "name": "lock01_state"
+        },
+        {
             "id": "6835c8d3-d3f5-46f0-bc4a-a236593afd07__L0",
             "name": "workedToday?"
         },
@@ -18319,10 +18389,6 @@
         {
             "id": "9c479e4e-bcd0-4b03-a52d-fa7012247a20__L0",
             "name": "Local 0"
-        },
-        {
-            "id": "21",
-            "name": "lock01_state"
         }
     ],
     "engineFieldValues": [
@@ -18341,8 +18407,8 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 427,
-        "worldScrollY": 672,
+        "worldScrollX": 493,
+        "worldScrollY": 715,
         "zoom": 161.7669677734375,
         "customColorsEnabled": true,
         "customHead": "",

@@ -13039,6 +13039,13 @@
                             }
                         },
                         {
+                            "id": "7d5e7e0b-8cb5-4aff-82fa-db821d4b24a3",
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 0.3
+                            }
+                        },
+                        {
                             "id": "46d85d10-7220-470e-84d4-eb56d4482b34",
                             "command": "EVENT_REMOVE_INPUT_SCRIPT",
                             "args": {
@@ -18334,8 +18341,8 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 311,
-        "worldScrollY": 437,
+        "worldScrollX": 427,
+        "worldScrollY": 672,
         "zoom": 161.7669677734375,
         "customColorsEnabled": true,
         "customHead": "",
