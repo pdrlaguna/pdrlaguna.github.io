@@ -536,6 +536,8 @@ strong {
   background-size: cover;
 }
 
+
+
 .hello {
   display: -webkit-box;
   display: -webkit-flex;
@@ -543,16 +545,13 @@ strong {
   display: flex;
   height: 75vh;
   background-color: #fff;
-  background-image: url('../images/blurry-gradient.jpg');
-  background-position: 0% 0%;
-  background-size: auto;
+  background-image: url('../images/PedroLarge_test.jpg');
+  background-position: 100% 100%;
+  background-size: cover;
 }
 
 .hello.large {
   height: 85vh;
-  background-image: url('../images/blurry-gradient.jpg');
-  background-position: 0% 0%;
-  background-size: auto;
 }
 
 .hello.small {
@@ -560,11 +559,10 @@ strong {
   background-image: url('../images/blurry-gradient.jpg');
   background-position: 0% 0%;
   background-size: auto;
-  background-attachment: scroll;
 }
 
 .hello.margin-top.home {
-  background-image: url('../images/PedroLarge_test.jpg');
+  background-image: url('../images/blurry-gradient.jpg');
   background-position: 100% 100%;
   background-size: cover;
 }
@@ -2044,4 +2042,3 @@ strong {
     grid-row-end: span 1;
   }
 }
-
